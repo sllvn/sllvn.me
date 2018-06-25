@@ -5,24 +5,24 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
 
+import 'tachyons/css/tachyons.css'
+
 const Layout = ({ children, data }) => (
-  <div>
+  <div className=''>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'A blog on technology and software from Andrew Sullivan.' },
+        { name: 'keywords', content: 'andrew sullivan, seattle, software' },
       ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
+      bodyAttributes={{
+        class: 'bg-near-white sans-serif'
       }}
+    />
+    <div
+      className='measure-xwide center pa3'
     >
+      <Header siteTitle={data.site.siteMetadata.title} />
       {children()}
     </div>
   </div>

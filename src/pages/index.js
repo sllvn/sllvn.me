@@ -3,10 +3,22 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className='bg-white mb5'>
+        <div className='dib bg-near-white gray b ph3 pv1'>June 24, 2018</div>
+        <div className='pa3 lh-copy'>
+        <h1 className='mt2'>Kitty kitty i just saw other cats inside the house</h1>
+        <p>Cat ipsum dolor sit amet, small kitty warm kitty little balls of fur for vommit food and eat it again yet try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard. Kitty kitty.</p>
+        <p>Loves cheeseburgers stare out the window but cats are fats i like to pets them they like to meow back step on your keyboard while you're gaming and then turn in a circle i like frogs and 0 gravity, and see owner, run in terror but i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and partway out, contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the air in greatest offense!.</p>
+        </div>
+    </div>
+    <div className='bg-white mb5'>
+        <div className='dib bg-near-white gray b ph3 pv1'>June 24, 2018</div>
+        <div className='pa3 lh-copy'>
+        <h1 className='mt2'>Kitty kitty i just saw other cats inside the house</h1>
+        <p>Cat ipsum dolor sit amet, small kitty warm kitty little balls of fur for vommit food and eat it again yet try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard. Kitty kitty.</p>
+        <p>Loves cheeseburgers stare out the window but cats are fats i like to pets them they like to meow back step on your keyboard while you're gaming and then turn in a circle i like frogs and 0 gravity, and see owner, run in terror but i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and partway out, contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the air in greatest offense!.</p>
+        </div>
+    </div>
   </div>
 )
 
