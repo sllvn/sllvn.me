@@ -1,5 +1,5 @@
-import React from "react"
-import Helmet from "react-helmet"
+import React from 'react'
+import Helmet from 'react-helmet'
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post, site } = data
@@ -11,7 +11,7 @@ const BlogPost = ({ data }) => {
       <div className='pa3 lh-copy'>
         <h3 className='mt1'>{post.frontmatter.title}</h3>
         <div
-          className="blog-post-content"
+          className='blog-post-content'
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>
