@@ -7,8 +7,11 @@
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-typography": "^1.7.19",
     "react-helmet": "^5.2.0",
-    "tachyons": "^4.10.0"
+    "tachyons": "^4.10.0",
+    "typography-theme-us-web-design-standards": "^0.16.9",
+    "typography-theme-wikipedia": "^0.15.11"
   },
   "keywords": [
     "gatsby"
