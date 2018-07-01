@@ -1,17 +1,12 @@
 import Typography from 'typography'
 import theme from 'typography-theme-us-web-design-standards'
 
-// theme.baseFontSize = '16px'
-/*theme.overrideThemeStyles = ({ rhythm }, options) => ({
-  'ol,ul': {
-    listStyleImage: 'none',
-    marginTop: rhythm(1)
-  },
-  'p,ol,ul': {
-    marginTop: rhythm(1),
-    marginBottom: 0
+theme.baseFontSize = '16px'
+theme.overrideThemeStyles = (props, options) => ({
+  'code': {
+    fontSize: '0.8em !important'
   }
-})*/
+})
 
 const typography = new Typography(theme)
 
