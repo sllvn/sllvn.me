@@ -1,5 +1,5 @@
 ---
-path: "/logic-in-rails-asset-pipeline"
+path: "/blog/logic-in-rails-asset-pipeline"
 date: "2013-09-22T20:19:00"
 title: "Add logic to your Rails asset pipeline manifests"
 ---

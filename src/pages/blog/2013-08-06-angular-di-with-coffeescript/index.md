@@ -1,5 +1,5 @@
 ---
-path: "/angular-di-with-coffeescript"
+path: "/blog/angular-di-with-coffeescript"
 date: "2013-08-06T11:30:00"
 title: "Angular controller dependency injection with Coffeescript"
 ---

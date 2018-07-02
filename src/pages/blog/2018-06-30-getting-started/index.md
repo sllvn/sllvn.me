@@ -1,5 +1,5 @@
 ---
-path: "/defining-page-titles-react-router"
+path: "/blog/defining-page-titles-react-router"
 date: "2016-08-29T13:31:49"
 title: "Defining page titles in react-router route config"
 ---

@@ -1,5 +1,5 @@
 ---
-path: "/combining-ios-sms-message-histories"
+path: "/blog/combining-ios-sms-message-histories"
 date: "2016-03-25T12:26:12"
 title: "Combining iOS SMS message histories from multiple devices"
 ---

@@ -1,5 +1,5 @@
 ---
-path: "/using-slack-at-home"
+path: "/blog/using-slack-at-home"
 date: "2015-12-13T16:11:26"
 title: "Using Slack at home"
 ---

@@ -1,5 +1,5 @@
 ---
-path: "/a-long-hiatus"
+path: "/blog/a-long-hiatus"
 date: "2015-11-04T10:38:12"
 title: "A long hiatus"
 ---
