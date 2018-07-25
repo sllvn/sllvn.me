@@ -12,6 +12,7 @@
     "gatsby-remark-prismjs": "^2.0.5",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
+    "prism-themes": "^1.0.1",
     "prismjs": "^1.15.0",
     "react-helmet": "^5.2.0",
     "tachyons": "^4.10.0",
