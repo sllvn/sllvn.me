@@ -3,7 +3,7 @@ import React from "react";
 import Link from "gatsby-link";
 
 const PostLink = ({ post }) => (
-  <div className='mb3'>
+  <div className='mb3 pa3 lh-copy bg-white'>
     <div>
       <Link to={post.frontmatter.path}>
         {post.frontmatter.title}
@@ -22,13 +22,13 @@ const IndexPage = ({
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
 
-  return <div className='bg-white mb5 pa3 lh-copy'>{Posts}</div>;
+  return <div className='mb5'>{Posts}</div>;
 };
 
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogArchiveQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

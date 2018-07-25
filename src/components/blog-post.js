@@ -1,25 +1,39 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post, site } = data
+export const BlogPost = ({ post }) => {
+  const { id, html, frontmatter } = post
 
   return (
     <div className='bg-white mb5'>
-      <Helmet title={`${post.frontmatter.title} | ${site.siteMetadata.title}`} />
-      <div className='dib bg-near-white gray b ph3 pv1'>{post.frontmatter.date}</div>
+      <div className='dib bg-near-white gray b ph3 pv1'>{frontmatter.date}</div>
       <div className='pa3 lh-copy'>
-        <h3 className='mt1'>{post.frontmatter.title}</h3>
+        <h3 className='mt1'>
+          <Link className='no-underline underline-hover' style={{ color: 'black' }} to={frontmatter.path}>{frontmatter.title}</Link>
+        </h3>
         <div
           className='blog-post-content'
-          dangerouslySetInnerHTML={{ __html: post.html }}
+          dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
     </div>
   )
 }
 
-export default BlogPost
+const ConnectedBlogPost = ({ data }) => {
+  const { markdownRemark: post, site } = data
+
+  return (
+    <div>
+      <Helmet titre={`${post.frontmatter.title} | ${site.siteMetadata.title}`} />
+      <BlogPost post={post} />
+    </div>
+  )
+}
+
+
+export default ConnectedBlogPost
 
 export const blogQuery = graphql`
   query BlogPostByPath($path: String!) {
