@@ -13,11 +13,11 @@ exports.createPages = ({ boundActionCreators, graphql, actions }) => {
 
   const blogPostTemplate = path.resolve(`src/components/blog-post.js`)
 
-  createRedirect({
-    fromPath: '/',
-    redirectInBrowser: true,
-    toPath: '/blog',
-  })
+  // createRedirect({
+  //   fromPath: '/',
+  //   redirectInBrowser: true,
+  //   toPath: '/blog',
+  // })
 
   return graphql(`{
     allMarkdownRemark(
