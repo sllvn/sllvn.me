@@ -4,6 +4,10 @@
       "path---blog-combining-ios-sms-message-histories-f71f48e4d783e14a5371.js",
       "path---blog-combining-ios-sms-message-histories-f71f48e4d783e14a5371.js.map"
     ],
+    "path---blog-facebooks-responsibility": [
+      "path---blog-facebooks-responsibility-7ca48a95d3900934c873.js",
+      "path---blog-facebooks-responsibility-7ca48a95d3900934c873.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-83bec2766ea5f9915f01.js",
       "component---src-pages-index-js-83bec2766ea5f9915f01.js.map"
@@ -37,16 +41,16 @@
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-4ed3099ba309de0d8d85.js",
-      "path---index-4ed3099ba309de0d8d85.js.map"
+      "path---index-f54857536985ea783c3a.js",
+      "path---index-f54857536985ea783c3a.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "path---blog-archive": [
-      "path---blog-archive-53245cc6de84a9489000.js",
-      "path---blog-archive-53245cc6de84a9489000.js.map"
+      "path---blog-archive-eb6ef61f02b4f635847a.js",
+      "path---blog-archive-eb6ef61f02b4f635847a.js.map"
     ],
     "commons": [
       "commons-403258ad126d5c26671b.js",
@@ -69,9 +73,9 @@
       "path---blog-using-slack-at-home-546854f1c7a267406962.js.map"
     ],
     "app": [
-      "app-b96357650413405f19f2.js",
+      "app-2ae8c766af43fede1721.js",
       "build-js-styles.css",
-      "app-b96357650413405f19f2.js.map",
+      "app-2ae8c766af43fede1721.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
