@@ -1,8 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import classNames from 'classnames'
+
 const NavLink = ({ active, ...props }) => (
-  <Link className={classNames(['no-underline underline-hover b--light-blue bw2', active && 'bb'])} style={{ color: '#666' }} {...props} />
+  props.href ? (
+    <a className={classNames(['no-underline underline-hover b--light-blue bw2', active && 'bb'])} {...props} />
+  ) : (
+    <Link className={classNames(['no-underline underline-hover b--light-blue bw2', active && 'bb'])} style={{ color: '#666' }} {...props} />
+  )
 )
 
 const Header = ({ siteTitle }) => (
@@ -12,6 +18,10 @@ const Header = ({ siteTitle }) => (
       {' '}
       <small>personal blog</small>
     </h1>
+    <ul className='list pa0 ml0'>
+      <li className='dib mr3'><NavLink href='https://www.inkblot.io'>about</NavLink></li>
+      <li className='dib mr3'><NavLink href='https://twitter.com/licyeus'>twitter</NavLink></li>
+    </ul>
     {false && (
       <ul className='list pa0 ml0'>
         <li className='dib mr3'><NavLink active={true} to='/blog'>blog</NavLink></li>
