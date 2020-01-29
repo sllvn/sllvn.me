@@ -1,3 +1,7 @@
 .measure-xwide {
   max-width: 42em;
 }
+
+.gatsby-highlight {
+  margin-bottom: 1.53rem;
+}
