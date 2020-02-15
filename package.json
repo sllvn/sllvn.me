@@ -5,19 +5,26 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-plugin-typography": "^1.7.19",
-    "gatsby-remark-prismjs": "^2.0.5",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
-    "prism-themes": "^1.0.1",
-    "prismjs": "^1.15.0",
-    "react-helmet": "^5.2.0",
+    "gatsby": "^2.19.17",
+    "gatsby-image": "^2.2.41",
+    "gatsby-link": "^2.2.29",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-typography": "^2.3.22",
+    "gatsby-remark-prismjs": "^3.3.31",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-remark": "^2.6.51",
+    "gatsby-transformer-sharp": "^2.3.14",
+    "prism-themes": "^1.3.0",
+    "prismjs": "^1.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
     "tachyons": "^4.10.0",
+    "typography": "^0.16.19",
     "typography-theme-us-web-design-standards": "^0.16.9",
-    "typography-theme-wikipedia": "^0.15.11"
+    "typography-theme-wikipedia": "^0.16.19"
   },
   "keywords": [
     "gatsby"
@@ -31,8 +38,8 @@
     "deploy": "gatsby build && gh-pages -d public"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.12.0"
+    "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
