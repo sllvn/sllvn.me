@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 
 import classNames from 'classnames'
 
-const NavLink = ({ active, ...props }) => (
+const NavLink = ({ active, children, ...props }) => (
   props.href ? (
-    <a className={classNames(['no-underline underline-hover b--light-blue bw2', active && 'bb'])} {...props} />
+    <a className={classNames(['no-underline underline-hover b--light-blue bw2', active && 'bb'])} {...props}>{children}</a>
   ) : (
     <Link className={classNames(['no-underline underline-hover b--light-blue bw2', active && 'bb'])} style={{ color: '#666' }} {...props} />
   )

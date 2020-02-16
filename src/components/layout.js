@@ -1,9 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
-import 'prism-themes/themes/prism-ghcolors.css'
 
 import Header from '../components/header'
 import './layout.css'
@@ -35,9 +32,7 @@ const Layout = ({ children, data }) => (
             class: 'bg-near-white'
           }}
         />
-        <div
-          className='measure-xwide center pa3'
-        >
+        <div className='measure-xwide center pa3'>
           <Header siteTitle={data.site.siteMetadata.title} />
           {children}
           <div className='mt5 pa3'>
@@ -48,9 +43,5 @@ const Layout = ({ children, data }) => (
     )}
   />
 )
-
-Layout.propTypes = {
-  children: PropTypes.func,
-}
 
 export default Layout

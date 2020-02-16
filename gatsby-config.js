@@ -17,6 +17,8 @@ module.exports = {
         name: 'pages',
       },
     },
+    `gatsby-remark-prismjs`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -29,17 +31,14 @@ module.exports = {
               aliases: {},
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 604,
+            },
+          },
         ],
       },
     },
-    /* `gatsby-plugin-sharp`,
-     * `gatsby-transformer-sharp`,
-     * `gatsby-transformer-remark`,
-     * {
-     *   resolve: `gatsby-source-filesystem`,
-     *   options: {
-     *     path: `${__dirname}/src/pages`,
-     *   },
-     * }, */
   ],
 }

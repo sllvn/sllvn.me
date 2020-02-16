@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 import Layout from '../components/layout'
 
 export const BlogPost = ({ post }) => {
-  const { id, html, frontmatter } = post
+  const { html, frontmatter } = post
 
   return (
     <div className='bg-white mb5'>
@@ -27,10 +27,10 @@ const ConnectedBlogPost = ({ data }) => {
   const { markdownRemark: post, site } = data
 
   return (
-    <Layout>
+    <>
       <Helmet titre={`${post.frontmatter.title} | ${site.siteMetadata.title}`} />
       <BlogPost post={post} />
-    </Layout>
+    </>
   )
 }
 
