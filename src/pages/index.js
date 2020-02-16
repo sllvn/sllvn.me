@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Layout from '../components/layout'
 import { BlogPost } from '../components/blog-post'
 
 const IndexPage = ({
@@ -13,10 +14,12 @@ const IndexPage = ({
     .map(edge => <BlogPost key={edge.node.id} post={edge.node} />)
 
   return (
-    <div>
-      {Posts}
-      <div className='pa3'><Link to='/blog/archive'>View more posts</Link></div>
-    </div>
+    <Layout>
+      <div>
+        {Posts}
+        <div className='pa3'><Link to='/blog/archive'>View more posts</Link></div>
+      </div>
+    </Layout>
   )
 }
 

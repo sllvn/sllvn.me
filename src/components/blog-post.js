@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
+import Layout from '../components/layout'
+
 export const BlogPost = ({ post }) => {
   const { id, html, frontmatter } = post
 
@@ -25,10 +27,10 @@ const ConnectedBlogPost = ({ data }) => {
   const { markdownRemark: post, site } = data
 
   return (
-    <div>
+    <Layout>
       <Helmet titre={`${post.frontmatter.title} | ${site.siteMetadata.title}`} />
       <BlogPost post={post} />
-    </div>
+    </Layout>
   )
 }
 
