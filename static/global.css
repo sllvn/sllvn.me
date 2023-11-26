@@ -1,0 +1,90 @@
+body {
+	background-color: #f2e8da;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #161514;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+main {
+	max-width: 40rem;
+	padding: 2rem 8rem;
+}
+
+a {
+  text-decoration: none;
+	color: #161514;
+	border-bottom: 1px solid #161514;
+}
+
+h1 {
+	font-size: 1em;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+	h1 a { border-bottom: none; }
+	h1 a:hover { border-bottom: 1px solid #161514;}
+h2 {
+	font-size: 1.25rem;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+blockquote {
+	margin: 0;
+	padding: 1rem;
+	background-color: #E4DBCD;
+}
+	blockquote p:first-child { margin-top: 0; }
+	blockquote p:last-child { margin-bottom: 0; }
+pre {
+	padding: 0.5rem 1rem;
+	overflow-x: auto;
+	line-height: 1.5;
+}
+	pre, code { font-size: 0.875rem; }
+	pre { background-color: #e4dbcd !important; }
+
+nav h4 {
+	margin-bottom: 0;
+}
+nav a {
+	margin-right: 1rem;
+}
+	nav a.more { border-bottom: 0; }
+	nav a.more::after { margin-left: 0.25rem; content: '\00BB' }
+	nav a.more:hover { border-bottom: 1px solid; }
+
+.post-listing {
+	margin: 0;
+	padding: 0;
+}
+	.post-listing li {
+		list-style: none;
+		margin-bottom: 2rem;
+	}
+
+article h2 { margin-bottom: 0; }
+article .date { margin-bottom: 2rem; }
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #302E2C;
+		color: #D2CABF;
+	}
+	a {
+		color: #D2CABF;
+		border-bottom-color: #D2CABF;
+	}
+	h1 a:hover { border-bottom-color: #D2CABF; }
+	pre, pre code {
+		background-color: #2A2826 !important;
+	}
+	blockquote {
+		background-color: #373533 !important;
+	}
+}
+
+@media (max-width: 60rem) {
+	main { padding: 2rem 1.5rem; }
+}

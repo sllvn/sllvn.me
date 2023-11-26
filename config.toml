@@ -1,0 +1,17 @@
+base_url = "https://sllvn.me"
+title = "sllvn//"
+
+compile_sass = false
+build_search_index = false
+generate_feed = true
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "monokai", filename = "syntax-theme-dark.css" },
+  { theme = "solarized-light", filename = "syntax-theme-light.css" },
+]
+
+[extra]
+author = "Andrew Sullivan"

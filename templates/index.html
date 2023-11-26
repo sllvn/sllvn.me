@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav>
+	<h4>Notes</h4>
+	<div>
+		{% set section = get_section(path="blog/_index.md") %}
+		{% for post in section.pages | slice(end=3) %}
+			<a href="{{ post.permalink }}">{{ post.title }}</a>
+		{% endfor %}
+		<a href='/blog' class='more'>more</a>
+	</div>
+	<h4>Projects</h4>
+	<div>
+		<a href='https://markers.ai'>Markers</a>
+	</div>
+	<h4>Elsewhere</h4>
+	<div>
+		<a href='https://github.com/sllvn'>Github</a>
+		<a href='https://indieweb.social/@sllvn'>@sllvn@indieweb.social</a>
+		<a href='https://twitter.com/licyeus'>Twitter</a>
+	</div>
+</nav>
+{% endblock %}
