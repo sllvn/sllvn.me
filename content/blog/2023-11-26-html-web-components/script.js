@@ -5,37 +5,34 @@ class GameOfLife extends HTMLElement {
   speed = 100
 
   connectedCallback () {
-    console.log('connectedCallback')
     this.innerHTML = `
       <svg viewBox="0 0 ${this.size} ${this.size}" />
       <button>Play</button>
     `
 
     this.button = this.querySelector('button')
-    this.button.addEventListener('click', this.pause)
+    this.button.addEventListener('click', this.startStop)
 
     this.seed()
     this.render()
   }
 
-  play = () => {
-    // console.log('this.button', this.button.innerHTML)
-    // this.button.innerHTML = 'yo'
-    // console.log('this.button', this.button.innerHTML)
+  play = (e) => {
     this.interval = setInterval(() => {
       this.tick()
       requestAnimationFrame(this.render)
     }, this.speed)
   }
 
-  pause = () => {
+  startStop = () => {
     if (this.interval) {
+      this.button.innerHTML = 'Play'
       clearInterval(this.interval)
       this.interval = null
     } else {
+      this.button.innerHTML = 'Pause'
       this.play()
     }
-    this.button.innerHTML = 'Play'
   }
 
   render = () => {

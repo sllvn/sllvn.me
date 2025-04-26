@@ -11,7 +11,7 @@ I've been enjoying the resurgent buzz around web components (specifically custom
 </my-player>
 ```
 
-But what about wrapping other elements? Guy at 11ty has created an `<is-land>` component with this idea in mind (it handles boring-but-necessary stuff like loading and rendering). I'm thinking more like configurators to control the behavior of nested components.
+But what about wrapping other elements? If the idea is progressive enhancement, why not enhance your other custom elements? Guy at 11ty has created an `<is-land>` component with this idea in mind (it handles boring-but-necessary stuff like loading and rendering). I'm thinking more like configurators to control the behavior of nested components.
 
 <script type='text/javascript' src='./script.js'></script>
 <style>
@@ -22,21 +22,13 @@ But what about wrapping other elements? Guy at 11ty has created an `<is-land>` c
   }
 </style>
 
-Here we have an ordinary Game of Life component (written largely by Copilot):
+Here we have an ordinary Game of Life component (written largely by Copilot). It accepts a couple attributes to control its behavior.
 
 ```html
-<game-of-life />
+<game-of-life size='25' speed='100' />
 ```
 
-<game-of-life />
-
-Now if we allow passing rules in as properties, we can customize its behavior:
-
-```html
-<game-of-life size='50' speed='200' />
-```
-
-<game-of-life size='50' speed='200' />
+<game-of-life size='25' speed='100' />
 
 Now let's create that wrapper component and let *it* set those rules:
 
@@ -45,7 +37,7 @@ Now let's create that wrapper component and let *it* set those rules:
   <label>Speed <input type='range' min='50' max='1000' value='100' /></label>
   <label>Size <input type='range' min='10' max='100' value='50' /></label>
 
-  <game-of-life size='50' speed='100' />
+  <game-of-life data-configurable />
 </game-config>
 ```
 
@@ -53,7 +45,7 @@ Now let's create that wrapper component and let *it* set those rules:
   <label>Speed <input type='range' min='50' max='1000' value='100' /></label>
   <label>Size <input type='range' min='10' max='100' value='50' /></label>
 
-  <game-of-life size='50' speed='100' />
+  <game-of-life data-configurable />
 </game-config>
 
 Component full source can be found at <a href='./script.js'>script.js</a>
