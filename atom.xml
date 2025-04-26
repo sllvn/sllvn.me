@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>sllvn&#x2F;&#x2F;</title>
+    <link href="https://sllvn.me/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://sllvn.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-11-26T13:22:00+00:00</updated>
+    <id>https://sllvn.me/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Composable custom elements</title>
+        <published>2023-11-26T13:22:00+00:00</published>
+        <updated>2023-11-26T13:22:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/html-web-components/" type="text/html"/>
+        <id>https://sllvn.me/blog/html-web-components/</id>
+        
+        <content type="html">&lt;p&gt;I&#x27;ve been enjoying the resurgent buzz around web components (specifically custom elements). The idea &lt;em&gt;du jour&lt;&#x2F;em&gt; seems to be &amp;quot;HTML Web Components&amp;quot;, ie, treating components as another form of progressive enhancement: wrap your normal content with a custom element, so that the normal content gets enhanced with the web component&#x27;s behavior. E.g. something like:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html z-code&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;my-player&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-tag z-inline z-any z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-any z-html&quot;&gt;audio&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;src&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;podcast.mp3&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;my-player&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But what about wrapping other elements? If the idea is progressive enhancement, why not enhance your other custom elements? Guy at 11ty has created an &lt;code&gt;&amp;lt;is-land&amp;gt;&lt;&#x2F;code&gt; component with this idea in mind (it handles boring-but-necessary stuff like loading and rendering). I&#x27;m thinking more like configurators to control the behavior of nested components.&lt;&#x2F;p&gt;
+&lt;script type=&#x27;text&#x2F;javascript&#x27; src=&#x27;.&#x2F;script.js&#x27;&gt;&lt;&#x2F;script&gt;
+&lt;style&gt;
+  svg {
+    border: 1px solid var(--primary);
+    max-width: 500px;
+    max-height: 500px;
+  }
+&lt;&#x2F;style&gt;
+&lt;p&gt;Here we have an ordinary Game of Life component (written largely by Copilot). It accepts a couple attributes to control its behavior.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html z-code&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-of-life&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;size&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;25&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;speed&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;100&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;game-of-life size=&#x27;25&#x27; speed=&#x27;100&#x27; &#x2F;&gt;
+&lt;p&gt;Now let&#x27;s create that wrapper component and let &lt;em&gt;it&lt;&#x2F;em&gt; set those rules:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html z-code&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-config&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;label&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;Speed &lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;input&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;type&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;range&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;min&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;50&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;max&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;1000&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;value&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;100&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;label&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;label&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;Size &lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;input&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;type&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;range&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;min&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;10&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;max&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;100&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;value&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;50&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;label&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+
+  &lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-of-life&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;data-configurable&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-config&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;game-config&gt;
+  &lt;label&gt;Speed &lt;input type=&#x27;range&#x27; min=&#x27;50&#x27; max=&#x27;1000&#x27; value=&#x27;100&#x27; &#x2F;&gt;&lt;&#x2F;label&gt;
+  &lt;label&gt;Size &lt;input type=&#x27;range&#x27; min=&#x27;10&#x27; max=&#x27;100&#x27; value=&#x27;50&#x27; &#x2F;&gt;&lt;&#x2F;label&gt;
+&lt;game-of-life data-configurable &#x2F;&gt;
+&lt;&#x2F;game-config&gt;
+&lt;p&gt;Component full source can be found at &lt;a href=&#x27;.&#x2F;script.js&#x27;&gt;script.js&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Simple ETL with bash, jq, and SQLite</title>
+        <published>2020-01-29T13:22:00+00:00</published>
+        <updated>2020-01-29T13:22:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/simple-etl-with-bash-jq-sqlite/" type="text/html"/>
+        <id>https://sllvn.me/blog/simple-etl-with-bash-jq-sqlite/</id>
+        
+        <content type="html">&lt;p&gt;I run a couple simple ETL pipelines for side projects, and after experimenting with Lambda to kick off Python jobs (and finding it frustrating), I&#x27;ve settled on simple bash scripts (along with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;stedolan&#x2F;jq&quot;&gt;the awesome &lt;code&gt;jq&lt;&#x2F;code&gt; util&lt;&#x2F;a&gt;) run via cron on a DigitalOcean instance. Not only is it more stable, but I&#x27;ve found it to be much faster. Recently, &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=22153390&quot;&gt;a thread on HN&lt;&#x2F;a&gt; convinced me to try adding SQLite to the mix, and I&#x27;ve been happy with the results.&lt;&#x2F;p&gt;
+&lt;p&gt;For my Twitter timeline scrape, I run &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;sllvn&#x2F;1a734d1f0c195995a9166ad309664e3f&quot;&gt;a script&lt;&#x2F;a&gt; every five minutes that scrapes the last 200 timeline tweets (via &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twitter&#x2F;twurl&quot;&gt;&lt;code&gt;twurl&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;), converts the JSON into a CSV, and imports that CSV into a SQLite db. A unique key on the &lt;code&gt;id&lt;&#x2F;code&gt; col prevents duplicates, and so far the setup has proven solid.&lt;&#x2F;p&gt;
+&lt;p&gt;The trick is using &lt;code&gt;jq&lt;&#x2F;code&gt;&#x27;s &lt;code&gt;@csv&lt;&#x2F;code&gt; filter (along with the &lt;code&gt;-r&lt;&#x2F;code&gt; flag to not escape output as JSON) to output the tweets to CSV:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-echo z-shell&quot;&gt;echo&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;id,created_at,user_id,screen_name,is_retweet,text&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-assignment z-redirection z-shell&quot;&gt;&amp;gt;&lt;&#x2F;span&gt; tweets.csv&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;jq&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;r&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;.[] | [.id, .created_at, .user.id, .user.screen_name, .retweeted_status != null, .text] | @csv&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; data&#x2F;tweets.json &lt;span class=&quot;z-keyword z-operator z-assignment z-redirection z-shell&quot;&gt;&amp;gt;&amp;gt;&lt;&#x2F;span&gt; tweets.csv&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then all that remains is to import the CSV into your SQLite db:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;sqlite3&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; tweets.sqlite&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;cmd&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;.mode csv&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;.import tweets.csv tweets&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can pass a single command to &lt;code&gt;sqlite3&lt;&#x2F;code&gt;&#x27;s CLI, but when you need to chain multiple commands (as importing from CSV requires &lt;code&gt;.mode csv&lt;&#x2F;code&gt;), use the &lt;code&gt;-cmd&lt;&#x2F;code&gt; flag for each of the first N-1 commands (listed commands will be executed in order).&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=22153390&quot;&gt;HN thread&lt;&#x2F;a&gt; gives some tips (recommended SQLite pragmas, etc.) on how to use this with larger pipelines, and I look forward to using this with my transit scraper (1000s of vehicle locations updating every minute).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Facebook&#x27;s responsibility in an election crisis</title>
+        <published>2018-11-29T22:21:00+00:00</published>
+        <updated>2018-11-29T22:21:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/facebooks-responsibility/" type="text/html"/>
+        <id>https://sllvn.me/blog/facebooks-responsibility/</id>
+        
+        <content type="html">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.pbs.org&#x2F;wgbh&#x2F;frontline&#x2F;interview&#x2F;alex-stamos&#x2F;&quot;&gt;PBS Frontline interviewed Alex Stamos&lt;&#x2F;a&gt;, ex-Facebook chief security officer, on the company&#x27;s response in wake of 2016 election. Some interesting quotes:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[One] of my big fears is that we’re going to see other U.S. adversaries—Iran, North Korea, China—jump into the information warfare space in 2018, and especially in 2020.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Prescient statement, as this interview was conducted in September, a month before &lt;a href=&quot;https:&#x2F;&#x2F;thehill.com&#x2F;policy&#x2F;national-security&#x2F;412292-us-warns-of-ongoing-election-interference-by-russia-china-iran&quot;&gt;the intelligence community warned of Russian, Iranian, and Chinese interference leading up to the midterms.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Do you think Facebook has earned the trust to be able to say, “Trust us; we’ve got this”?&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’m not going to answer that. I’m sorry—that’s just—everybody can make that decision for themselves.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;To me, that reads &amp;quot;no&amp;quot;.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the GRU pulled the same playbook in 2018, if right now WikiLeaks came out with the email inboxes of the five most vulnerable Democratic Senate candidates, nothing would be different in 2018 than it was in 2016, and I think we’ve got to start to think about when that happens, because that is very much a possibility if not in the midterms, in the presidential election.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Stamos makes the point that government regulation is the answer, but as &lt;a href=&quot;https:&#x2F;&#x2F;mashable.com&#x2F;2018&#x2F;04&#x2F;10&#x2F;mr-zuckerberg-meme-senate-hearing-facebook&#x2F;&quot;&gt;Zuckerberg had to explain the internet to our aged Senators&lt;&#x2F;a&gt;, I wouldn&#x27;t wait on government to take the lead. Tech companies understand their own platforms better than anyone else; as such, they are the most capable of understanding the consequences of under-moderation. If you build a platform, the burden of moderation falls upon &lt;em&gt;you&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Defining page titles in react-router route config</title>
+        <published>2016-08-29T13:31:49+00:00</published>
+        <updated>2016-08-29T13:31:49+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/defining-page-titles-react-router/" type="text/html"/>
+        <id>https://sllvn.me/blog/defining-page-titles-react-router/</id>
+        
+        <content type="html">&lt;p&gt;I’ve been using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nfl&#x2F;react-helmet&quot;&gt;react-helmet&lt;&#x2F;a&gt; to set page titles in &lt;a href=&quot;http:&#x2F;&#x2F;nomos.us&quot;&gt;Nomos&lt;&#x2F;a&gt;, but it’s felt weird to me to litter my JSX templates with &lt;Helmet&gt; tags. Thinking it would be cleaner (and would allow me to re-use titles, e.g. for breadcrumbs) if I pulled the page titles into the route config, &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;0bb5f5e88718944f514b99c064be64b1&quot;&gt;I created a higher-order component that I now just wrap my container components in&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I use this by defining a &lt;code&gt;title&lt;&#x2F;code&gt; on my route’s config, which can be either a string or a function (which receives the component’s props as an argument). Something like:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-relational z-ts&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;Route&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;path&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&#x2F;documents&#x2F;:documentId&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;component&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;DocumentContainer&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;title&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-arrow z-ts&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-ts&quot;&gt;props&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-arrow z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-function z-arrow z-ts&quot;&gt;=&amp;gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-object z-ts&quot;&gt;props&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-ts&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-property z-ts&quot;&gt;documentName&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ts&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-relational z-ts&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Combining iOS SMS message histories from multiple devices</title>
+        <published>2016-03-25T12:26:12+00:00</published>
+        <updated>2016-03-25T12:26:12+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/combining-ios-sms-histories/" type="text/html"/>
+        <id>https://sllvn.me/blog/combining-ios-sms-histories/</id>
+        
+        <content type="html">&lt;p&gt;A couple months back, I gave up on my iPhone 6 (too unwieldy) and began using my old iPhone 5s. Regrettably, I didn’t restore the 5s from a backup, so its SMS history began as a clean slate. Two months later, in preparation for the timely iPhone SE release, I find myself wanting to merge the two SMS histories. Unfortunately, no such way existed, officially or otherwise... until now.&lt;&#x2F;p&gt;
+&lt;p&gt;With some Ruby&#x2F;SQLite hackery, I managed to create &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;licyeus&#x2F;ios-sms-merge&quot;&gt;ios-sms-merge&lt;&#x2F;a&gt; - you’ll need to download the kludgy iBackupBot to import&#x2F;export from your iOS backups, but with persistence and this script, you can now combine your SMS histories.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Using Slack at home</title>
+        <published>2015-12-13T16:11:26+00:00</published>
+        <updated>2015-12-13T16:11:26+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/using-slack-at-home/" type="text/html"/>
+        <id>https://sllvn.me/blog/using-slack-at-home/</id>
+        
+        <content type="html">&lt;p&gt;After reading about Facebook Messenger’s &lt;a href=&quot;http:&#x2F;&#x2F;www.businessinsider.com&#x2F;facebook-messenger-testing-facial-recognition-technology-2015-11&quot;&gt;complete disregard for user privacy&lt;&#x2F;a&gt;, I moved communication with the girlfriend over to Slack. We are apparently &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@msquinn&#x2F;slack-after-hours-306d37e67722&quot;&gt;not the first to do so&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;We’ve been happy with the experience. Search, totally absent from FB Messenger, is great. Multi-channeled communication is quite useful for home communication (we separate messages by topic: #home, #groceries, or just #general chat). Additionally, we’ve spun up a &lt;a href=&quot;https:&#x2F;&#x2F;hubot.github.com&#x2F;&quot;&gt;chatbot&lt;&#x2F;a&gt; to manage shared lists (e.g., groceries) and tell us when our morning bus is arriving.&lt;&#x2F;p&gt;
+&lt;p&gt;It would be great to have more contextual awareness in the Slack app, however. Location, especially, would be nice to have for more relevant chatbot responses. “Where’s my bus?” is a lot more natural than “Where’s the 28 southbound on 34th street?”&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve shared my hubot scripts at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;licyeus&#x2F;home-hubot&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;licyeus&#x2F;home-hubot&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>A long hiatus</title>
+        <published>2015-11-04T10:38:12+00:00</published>
+        <updated>2015-11-04T10:38:12+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/a-long-hiatus/" type="text/html"/>
+        <id>https://sllvn.me/blog/a-long-hiatus/</id>
+        
+        <content type="html">&lt;p&gt;After more than two years away, I’m back.&lt;&#x2F;p&gt;
+&lt;p&gt;In that time period, I’ve settled down in Seattle and explored the booming tech community here: went to many meetups, helped organize a hackathon, contributed to open source, worked as a contractor (then employee) for a healthcare startup.&lt;&#x2F;p&gt;
+&lt;p&gt;The frontend world has evolved quite a bit over that time. React is now the library eating everyone’s lunch; Angular and Ember, while still growing, seem to have seen their growth slow.&lt;&#x2F;p&gt;
+&lt;p&gt;I toyed with Ember on a side project in late 2013 (during its endless beta), before scrapping it to build the MVP in Rails. I spent a year with an Angular team building out two complex codebases with myriad business rules. And after two months developing in React, it’s the project that makes the most sense to me.&lt;&#x2F;p&gt;
+&lt;p&gt;The simplicity of the React (and Flux&#x2F;Redux) model is inspiring. It’s how large applications ought to be built. And while &lt;a href=&quot;https:&#x2F;&#x2F;bitquabit.com&#x2F;post&#x2F;the-more-things-change&#x2F;&quot;&gt;it’s likely not a new paradigm&lt;&#x2F;a&gt;, it’s brought fresh air into frontend application development.&lt;&#x2F;p&gt;
+&lt;p&gt;I’m excited to be a frontend dev. I’m excited for the role of technology in our lives. And I’m excited enough to share my thoughts on this little corner of the Internet.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Add logic to your Rails asset pipeline manifests</title>
+        <published>2013-09-22T20:19:00+00:00</published>
+        <updated>2013-09-22T20:19:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/logic-in-rails-asset-pipeline/" type="text/html"/>
+        <id>https://sllvn.me/blog/logic-in-rails-asset-pipeline/</id>
+        
+        <content type="html">&lt;p&gt;Recently, while reading &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;discourse&#x2F;discourse&quot;&gt;Discourse’s source code&lt;&#x2F;a&gt;, I learned that Rails asset pipeline Javascript&#x2F;CSS manifests are just plain old JS&#x2F;CSS files and can be passed through a templating engine. This means you can add the .erb extension to add logic. This is useful if you want to use a prod-only CDN, serve dev-only Javascript debug code, or in Discourse’s case, dynamically load plugin assets.&lt;&#x2F;p&gt;
+&lt;p&gt;When including assets from Ruby code in your manifest, use Sprocket’s &lt;code&gt;require_asset&lt;&#x2F;code&gt; method (&lt;a href=&quot;https:&#x2F;&#x2F;www.rubydoc.info&#x2F;github&#x2F;sstephenson&#x2F;sprockets&#x2F;Sprockets&#x2F;Context:require_asset&quot;&gt;rubydoc&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;discourse&#x2F;discourse&#x2F;blob&#x2F;ef82b66e95324805e3d3d982d2052c52eee4eca7&#x2F;app&#x2F;assets&#x2F;javascripts&#x2F;application.js.erb&quot;&gt;Discourse’s application.js.erb&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;ruby&quot; class=&quot;language-ruby z-code&quot;&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-meta z-string z-regexp z-ruby&quot;&gt;&lt;span class=&quot;z-string z-regexp z-classic z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ruby&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-require z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-other z-special-method z-ruby&quot;&gt;require&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;env&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-string z-regexp z-ruby&quot;&gt;&lt;span class=&quot;z-string z-regexp z-classic z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ruby&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-require z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-other z-special-method z-ruby&quot;&gt;require&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;discourse&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;components&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;probes&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;js&lt;&#x2F;span&gt;
+
+&lt;span class=&quot;z-keyword z-operator z-comparison z-ruby&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;%&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-comment z-line z-number-sign z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ruby&quot;&gt;#&lt;&#x2F;span&gt; ...
+&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;if&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-class z-ruby&quot;&gt;Rails&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;env&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;development?
+  require_asset &lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;.&#x2F;external_development&#x2F;ember.js&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;else&lt;&#x2F;span&gt;
+  require_asset &lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;.&#x2F;external_production&#x2F;ember.js&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;end&lt;&#x2F;span&gt;
+
+require_asset &lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;.&#x2F;main_include.js&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+
+&lt;span class=&quot;z-comment z-line z-number-sign z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ruby&quot;&gt;#&lt;&#x2F;span&gt; Include plugin javascripts
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-support z-class z-ruby&quot;&gt;DiscoursePluginRegistry&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;javascripts&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;each &lt;span class=&quot;z-keyword z-control z-start-block z-ruby&quot;&gt;do&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-block z-parameters z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameters z-begin z-ruby&quot;&gt;|&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-block z-parameters z-ruby&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-ruby&quot;&gt;js&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-block z-parameters z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameters z-end z-ruby&quot;&gt;|&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+  require_asset&lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;js&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;end&lt;&#x2F;span&gt;
+&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-other z-literal z-other z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;%&amp;gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Angular controller dependency injection with Coffeescript</title>
+        <published>2013-08-06T11:30:00+00:00</published>
+        <updated>2013-08-06T11:30:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://sllvn.me/blog/angular-di-with-coffeescript/" type="text/html"/>
+        <id>https://sllvn.me/blog/angular-di-with-coffeescript/</id>
+        
+        <content type="html">&lt;p&gt;After reading that Angular’s new “controller as” syntax available in 1.1.5 works quite nicely with Coffeescript, I was inspired to port some existing Javascript&#x2F;Angular code to Coffeescript. What was not immediately apparent, however, was how to inject dependencies when using a Coffeescript class as the meat of an Angular controller.&lt;&#x2F;p&gt;
+&lt;p&gt;I finally settled upon something like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-object z-ts&quot;&gt;myApp&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-ts&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-property z-ts&quot;&gt;controller&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;YoloController&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-array z-literal z-ts&quot;&gt; &lt;span class=&quot;z-meta z-brace z-square z-ts&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;$resource&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
+  &lt;span class=&quot;z-meta z-class z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-class z-ts&quot;&gt;class&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;YoloController&lt;&#x2F;span&gt;
+    &lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;constructor&lt;&#x2F;span&gt;: (&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;$resource&lt;&#x2F;span&gt;) -&amp;gt;
+      @&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;Hipster&lt;&#x2F;span&gt; = &lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;$resource&lt;&#x2F;span&gt;(&amp;#39;&#x2F;&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;hipsters&lt;&#x2F;span&gt;&amp;#39;)
+      @&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;hipsters&lt;&#x2F;span&gt; = @&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;Hipsters&lt;&#x2F;span&gt;.&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;query&lt;&#x2F;span&gt;()
+]
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Obviously, you would want to move this resource into a service. And if you needed to use the injection in other class methods, you would want to assign it to a class variable, using Coffeescript’s convenient constructor assignment syntax (note the @ sign): &lt;code&gt;constructor: (@$resource) -&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
