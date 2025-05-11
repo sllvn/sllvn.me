@@ -4,7 +4,36 @@ class GameOfLife extends HTMLElement {
   size = 25
   speed = 100
 
-  connectedCallback () {
+  static get observedAttributes() {
+    return ['size', 'speed', 'data-configurable']
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (oldValue === newValue) return
+
+    if (name === 'size') {
+      this.size = parseInt(newValue) || 25
+      // Update SVG viewBox to match new size
+      const svg = this.querySelector('svg')
+      if (svg) {
+        svg.setAttribute('viewBox', `0 0 ${this.size} ${this.size}`)
+      }
+      if (this.grid.length) {
+        this.seed()
+        this.render()
+      }
+    } else if (name === 'speed') {
+      // Invert and scale the speed value - higher number means faster animation
+      // Divide by 3 to make everything ~3x faster
+      this.speed = (1000 - (parseInt(newValue) || 100)) / 5
+      if (this.interval) {
+        clearInterval(this.interval)
+        this.play()
+      }
+    }
+  }
+
+  connectedCallback() {
     this.innerHTML = `
       <svg viewBox="0 0 ${this.size} ${this.size}" />
       <button>Play</button>
@@ -12,6 +41,12 @@ class GameOfLife extends HTMLElement {
 
     this.button = this.querySelector('button')
     this.button.addEventListener('click', this.startStop)
+
+    // Get initial values from attributes
+    this.size = parseInt(this.getAttribute('size')) || this.size
+    // Invert initial speed value and scale
+    const speedValue = parseInt(this.getAttribute('speed')) || this.speed
+    this.speed = (1000 - speedValue) / 3
 
     this.seed()
     this.render()
@@ -95,4 +130,36 @@ class GameOfLife extends HTMLElement {
   }
 }
 
+class GameConfig extends HTMLElement {
+  connectedCallback() {
+    // Wait for child elements to be available
+    requestAnimationFrame(() => {
+      const game = this.querySelector('[data-configurable]')
+      if (!game) return
+
+      const speedInput = this.querySelector('input[name="speed"]')
+      const sizeInput = this.querySelector('input[name="size"]')
+
+      if (speedInput) {
+        // Set initial value
+        game.setAttribute('speed', speedInput.value)
+
+        speedInput.addEventListener('input', (e) => {
+          game.setAttribute('speed', e.target.value)
+        })
+      }
+
+      if (sizeInput) {
+        // Set initial value
+        game.setAttribute('size', sizeInput.value)
+
+        sizeInput.addEventListener('input', (e) => {
+          game.setAttribute('size', e.target.value)
+        })
+      }
+    })
+  }
+}
+
 window.customElements.define('game-of-life', GameOfLife)
+window.customElements.define('game-config', GameConfig)
