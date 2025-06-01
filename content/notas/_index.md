@@ -1,6 +1,6 @@
 +++
 title = "Lista de notas"
 sort_by = "date"
-template = "blog.html"
+template = "notas.html"
 page_template = "post.html"
 +++

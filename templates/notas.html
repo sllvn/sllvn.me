@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="notas-listing">
+  {% for page in section.pages | slice(end=10) %}
+    <article class="nota-full">
+      <header>
+        <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+        <div class="date">{{ page.date | date(format="%Y-%m-%d") }}</div>
+      </header>
+      <div class="content">
+        {{ page.content | safe }}
+      </div>
+    </article>
+    {% if not loop.last %}
+      <div style="margin-bottom: 4rem;"></div>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endblock %}
