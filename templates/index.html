@@ -10,6 +10,14 @@
 		{% endfor %}
 		<a href='/blog' class='more'>more</a>
 	</div>
+	<h4>Notas</h4>
+	<div>
+		{% set notas_section = get_section(path="notas/_index.md") %}
+		{% for post in notas_section.pages | slice(end=3) %}
+			<a href="{{ post.permalink }}">{{ post.title }}</a>
+		{% endfor %}
+		<a href='/notas' class='more'>más</a>
+	</div>
 	<h4>Projects</h4>
 	<div>
 		<a href='https://markers.ai'>Markers</a>
