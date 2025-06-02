@@ -1,5 +1,4 @@
 +++
-title = "15 nov 2024"
 date = "2024-11-15T14:31:00Z"
 +++
 
@@ -10,5 +9,3 @@ durante la tarde, Melissa y yo fuimos al supermercado se llama H.E.B. es gigante
 anoche mis amigos y yo salimos a un paseo de arte en el centro de Austin. fue divertido, pero mis amigos les gusta tomar muchos selfies así que siempre estaba esperando para ellos. y sorprendentemente, Austin puede estar bastante frio en la noche: temblé hasta encontramos una tienda y compré unos chocolate caliente.
 
 este mañana me levanté temprano, a las 6 (mas o menos) porque Austin es 3 horas mas tardé de Buenos Aires. usualmente mis amigos levanté tarde (cerca 9) así que decidí salir a un cafe. el mas cerca es Starbucks y fue una caminata de 20 mins. nadie camina acá - todos conduce a todas partes. si camines, es porque sos pobre. y los autos son muy grande, estaría una broma si los autos no estarían tan peligroso.
-
-mate muy caro mi camino a starbucks
