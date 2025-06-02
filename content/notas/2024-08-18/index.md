@@ -2,12 +2,12 @@
 date = "2024-08-18T17:21:00Z"
 +++
 
-Mi viaje fue un quilombo.
+mi viaje fue un quilombo.
 
-Mi avión fue 12 horas tarde, por un problema mecánico. Inicialmente se ofrecen un pase de 15 dólares para comer, ridículo. Entonces sus llamo y finalmente me dan un hotel… pero no pude tener mis maletas, solo me dan un cepillo los dientes.
+mi avion fue 12 horas tarde, por un problema mecanical. inicialmente se ofrecen un pase de 15 dolares para comer, ridiculo. entonces sus llamo y finalmente me dan un hotel… pero no pude tener mis maletas, solo me dan un cepillo los dentes.
 
-Llegué el hotel (lleno de argentinos), puse mis maletas en la habitación, y salí por comer. Cuando volví, había una fuga. Agua de la techo.
+llegue el hotel (lleno de argentinos), puse mis maletas en la habitación, y salí por comer. cuando volví, habiá una fuga. agua de la techo.
 
-Me muden, pero ahora pienso que mis viaje es maldita.
+me muden, pero ahora pienso que mis viaje es maldita.
 
-Al menos, mi taxi del aeropuerto no fue un estafa!
+al menos, mi taxi del aeropuerto no fue un estafa!
