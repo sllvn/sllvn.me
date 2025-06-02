@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="notas-listing">
-  {% for page in section.pages | slice(end=10) %}
+  {% for page in section.pages | slice(end=20) %}
     <article class="nota-full">
       <header>
         {% if page.title %}
@@ -20,6 +20,16 @@
         {{ page.content | safe }}
       </div>
     </article>
+    <div class="image-gallery">
+      {% for asset in page.assets -%}
+        {%- if asset is matching("[.](jpg|png)$") -%}
+          {% set image = resize_image(path=asset, width=250, height=250) %}
+          <a href="{{ get_url(path=asset) }}" target="_blank">
+            <img src="{{ image.url }}" />
+          </a>
+        {%- endif %}
+      {%- endfor %}
+    </div>
     {% if not loop.last %}
       <div style="margin-bottom: 4rem;"></div>
     {% endif %}
