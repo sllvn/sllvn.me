@@ -1,0 +1,7 @@
+{% macro date_title(date) %}
+{% set day = date | date(format="%d") | int %}
+{% set month_num = date | date(format="%m") | int %}
+{% set year = date | date(format="%Y") %}
+{% set months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] %}
+{{ day }} {{ months[month_num] }} {{ year }}
+{% endmacro %} 

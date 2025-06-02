@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "shortcodes/date_title.html" as date_title %}
 
 {% block content %}
 <article>
@@ -6,11 +7,7 @@
 		<h2>{{ page.title }}</h2>
 		<div class="date">{{ page.date | date(format="%Y-%m-%d") }}</div>
 	{% else %}
-		{% set day = page.date | date(format="%d") | int %}
-		{% set month_num = page.date | date(format="%m") | int %}
-		{% set year = page.date | date(format="%Y") %}
-		{% set months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] %}
-		<h2>{{ day }} {{ months[month_num] }} {{ year }}</h2>
+		<h2>{{ date_title::date_title(date=page.date) }}</h2>
 	{% endif %}
 	{{ page.content | safe }}
 </article>

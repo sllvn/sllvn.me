@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "shortcodes/date_title.html" as date_title %}
 
 {% block content %}
 <nav>
@@ -14,11 +15,7 @@
 	<div>
 		{% set notas_section = get_section(path="notas/_index.md") %}
 		{% for post in notas_section.pages | slice(end=100) %}
-			{% set day = post.date | date(format="%d") | int %}
-			{% set month_num = post.date | date(format="%m") | int %}
-			{% set year = post.date | date(format="%Y") %}
-			{% set months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] %}
-			<a href="{{ post.permalink | safe }}" style="white-space: nowrap;">{{ day }} {{ months[month_num] }} {{ year }}</a>
+			<a href="{{ post.permalink | safe }}" style="white-space: nowrap;">{{ date_title::date_title(date=post.date) }}</a>
 		{% endfor %}
 		<!-- <a href='/notas' class='more'>más</a> -->
 	</div>
