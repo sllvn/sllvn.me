@@ -14,7 +14,7 @@ body {
 }
 
 main {
-	max-width: 40rem;
+	max-width: 41rem;
 	padding: 2rem 8rem;
 }
 
@@ -23,6 +23,7 @@ a {
 	color: var(--primary);
 	border-bottom: 1px solid var(--primary);
 }
+	a:has(img) { border-bottom: none; }
 
 h1 {
 	font-size: 1em;
@@ -73,6 +74,16 @@ nav a {
 
 article h2 { margin-bottom: 0; }
 article .date { margin-bottom: 2rem; }
+
+.image-gallery {
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+	.image-gallery img {
+		max-width: 13rem;
+	}
 
 @media (prefers-color-scheme: dark) {
 	:root {
