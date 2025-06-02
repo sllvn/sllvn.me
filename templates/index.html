@@ -1,14 +1,23 @@
 {% extends "base.html" %}
+{% import "shortcodes/date_title.html" as date_title %}
 
 {% block content %}
 <nav>
 	<h4>Notes</h4>
 	<div>
 		{% set section = get_section(path="blog/_index.md") %}
-		{% for post in section.pages | slice(end=3) %}
+		{% for post in section.pages | slice(end=100) %}
 			<a href="{{ post.permalink }}">{{ post.title }}</a>
 		{% endfor %}
-		<a href='/blog' class='more'>more</a>
+		<!-- <a href='/blog' class='more'>more</a> -->
+	</div>
+	<h4>Notas (en español)</h4>
+	<div>
+		{% set notas_section = get_section(path="notas/_index.md") %}
+		{% for post in notas_section.pages | slice(end=100) %}
+			<a href="{{ post.permalink | safe }}" style="white-space: nowrap;">{{ date_title::date_title(date=post.date) }}</a>
+		{% endfor %}
+		<!-- <a href='/notas' class='more'>más</a> -->
 	</div>
 	<h4>Projects</h4>
 	<div>
