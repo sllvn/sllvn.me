@@ -1,7 +1,7 @@
 {% macro date_title(date) %}
-{% set day = date | date(format="%d") | int %}
-{% set month_num = date | date(format="%m") | int %}
-{% set year = date | date(format="%Y") %}
+{% set day = date | date(format="%d", timezone="America/Argentina/Buenos_Aires") | int %}
+{% set month_num = date | date(format="%m", timezone="America/Argentina/Buenos_Aires") | int %}
+{% set year = date | date(format="%Y", timezone="America/Argentina/Buenos_Aires") %}
 {% set months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] %}
 {{ day }} {{ months[month_num] }} {{ year }}
 {% endmacro %} 
