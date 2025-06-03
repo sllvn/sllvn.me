@@ -98,5 +98,6 @@ article .date { margin-bottom: 2rem; }
 }
 
 @media (max-width: 60rem) {
-	main { padding: 2rem 1.5rem; }
+	body { line-height: 1.7; }
+	main { padding: 1.5rem 1rem; }
 }
