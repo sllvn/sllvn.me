@@ -12,4 +12,4 @@ Despues de Iruya, pasamos un dia en Purmamarca. Paramos en Hornocal para la vist
 
 Nuestro última día, fuimos a Salinas Grandes. Es un lugar llamativo, pero aburrido, sin profundidad, si eso tiene sentido. Es perfecto para Instagram, pero no mucho mas.
 
-Me gustó la zona y quisiera visitarla de nuevo, pero con mejor español para poder hablar más con la gente. Quizás durante el próximo carnaval porque parece que el suyo es muy distintivo.
+Me gustó el área y quisiera visitarla de nuevo, pero con mejor español para poder hablar más con la gente. Quizás durante el próximo carnaval porque parece que el suyo es muy distintivo.
