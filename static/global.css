@@ -99,6 +99,7 @@ article img {
     --quote-background: #373533;
     --code-background: #2a2826;
   }
+  .dark-invert { filter: invert(1); }
 }
 
 @media (max-width: 60rem) {

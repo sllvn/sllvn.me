@@ -3,7 +3,7 @@ date: "2025-07-20T16:00:00"
 title: "Creating a map of Argentina's rivers"
 ---
 
-![Map of Argentina rivers](./assets/argentina_rivers.png)
+{{ img(src="./assets/argentina_rivers.png", class="dark-invert", alt="Map of Argentina rivers") }}
 
 For the past decade I've used [mbostock's map of U.S. Rivers](https://github.com/mbostock/us-rivers) as my desktop wallpaper. It was a perfect fit in an ideological and literal sense: water is an underappreciated (and [mismanaged](https://www.propublica.org/series/killing-the-colorado)) resource, especially in the American Southwest, and the dimensions of the U.S. roughly matches 16:10 laptop displays.
 
