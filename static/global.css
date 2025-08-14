@@ -19,9 +19,8 @@ main {
 }
 
 a {
-  text-decoration: none;
   color: var(--primary);
-  border-bottom: 1px solid var(--primary);
+  text-underline-offset: 0.25em;
 }
   a:has(img) { border-bottom: none; }
 
