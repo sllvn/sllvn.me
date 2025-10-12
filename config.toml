@@ -13,5 +13,8 @@ highlight_themes_css = [
   { theme = "solarized-light", filename = "syntax-theme-light.css" },
 ]
 
+author = "Andrew Sullivan"
+
 [extra]
 author = "Andrew Sullivan"
+email = "hello@sllvn.me"
