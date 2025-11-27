@@ -1,9 +1,11 @@
 base_url = "https://sllvn.me"
 title = "sllvn//"
+author = "Andrew Sullivan"
 
 compile_sass = false
 build_search_index = false
 generate_feeds = true
+feed_filenames = ["atom.xml"]
 
 [markdown]
 highlight_code = true
@@ -12,8 +14,6 @@ highlight_themes_css = [
   { theme = "monokai", filename = "syntax-theme-dark.css" },
   { theme = "solarized-light", filename = "syntax-theme-light.css" },
 ]
-
-author = "Andrew Sullivan"
 
 [extra]
 author = "Andrew Sullivan"
