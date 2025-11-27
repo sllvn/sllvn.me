@@ -1,0 +1,10 @@
+[tools]
+zola = "0.19.2"
+
+[tasks.dev]
+description = "Start development server"
+run = "zola serve"
+
+[tasks.build]
+description = "Build site locally (for debugging)"
+run = "zola build"
