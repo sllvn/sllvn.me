@@ -1,5 +1,6 @@
 +++
 date = "2024-11-15T14:31:00Z"
+title = "Llegando a Austin"
 +++
 
 Llegué ayer en la mañana a los EEUU. Mi vuelo fue bueno - sin incidente y a tiempo. Me estoy quedando con mis amigos (Brandon y Melissa) en Austin. Texas es un ajuste: es muy lejo de Buenos Aires, ambos en distancia y en cultura.

@@ -1,5 +1,6 @@
 +++
 date = "2024-11-30T13:35:00Z"
+title = "Invierno gris"
 +++
 
 El Noroeste del Pacífico es innegablemente hermoso. Cuando el sol aparece por las nubes, particularmente durante el atardecer, los colores del cielo son increíble: los azules y morados estan en crudo contraste contra las gris. Y con la agua, es perfección.

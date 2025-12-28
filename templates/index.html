@@ -15,7 +15,7 @@
 	<div>
 		{% set notas_section = get_section(path="notas/_index.md") %}
 		{% for post in notas_section.pages | slice(end=100) %}
-			<a href="{{ post.permalink | safe }}" style="white-space: nowrap;">{{ date_title::date_title(date=post.date) }}</a>
+			<a href="{{ post.permalink | safe }}" style="white-space: nowrap;">{% if post.title %}{{ post.title }}{% else %}{{ date_title::date_title(date=post.date) }}{% endif %}</a>
 		{% endfor %}
 		<!-- <a href='/notas' class='more'>más</a> -->
 	</div>

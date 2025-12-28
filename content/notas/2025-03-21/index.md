@@ -1,5 +1,6 @@
 +++
 date = "2025-03-21T08:17:00Z"
+title = "São Paulo"
 +++
 
 Hoy es el ultimo día de verano. Antes mi mudanza, estaba un poco preocupado por el verano acá: el calor, el sol, la humedad. Y es verdad, son fuerte, pero soportable. La humedad, en particular, es difícil. Cuando es 28 con 90% humedad, es un montón, mucho mas difícil que 35 con 50% humedad, para mi. No puedo sentarme en el balcón, en la sombre, y disfrutar la vida.

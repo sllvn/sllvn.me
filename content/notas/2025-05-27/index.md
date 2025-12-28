@@ -1,5 +1,6 @@
 +++
 date = "2025-05-27T09:08:00Z"
+title = "Elecciones en BA"
 +++
 
 Recíen fueron las elecciones por la ciudad de Buenos Aires. Los resultados sorprendieron muchos, porque la partida de la centra derecha (el PRO) perdió muchos de sus posiciones a la partida se llama LLA (mas de la derecha). No voy a escribir por los resultados, pero me parece emblemático de la situación global: la desaparición de la mitad y la aumentación de la posiciones mas extremas (gracias a las redes sociales).

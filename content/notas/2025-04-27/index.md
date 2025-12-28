@@ -1,5 +1,6 @@
 +++
 date = "2025-04-27T20:54:00Z"
+title = "Los robots de Austin"
 +++
 
 Recién visité los EEUU por unas semanas. Tuve una reunion presencial de trabajo, pero llegué unos días temprano para visitar amigos. Para mi, Austin es raro y un poco dystopia pero siempre es bueno a visitar amigos.

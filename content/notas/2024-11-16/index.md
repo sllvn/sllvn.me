@@ -1,5 +1,6 @@
 +++
 date = "2024-11-16T21:28:00Z"
+title = "Museo Blanton (Austin)"
 +++
 
 Hoy fue sabado así que mis amigos no tuvieron trabajar. Hicimos muchas cosas: fue al mercado del arte para comprar algo por la cumpleaños de su amiga, comemos barbecue de texas, fuimos a la arcade (la sala de juegos recreativos?) por el bien de los viejos tiempos, y finalmente fuimos al [Museo de arte Blanton](https://blantonmuseum.org/).

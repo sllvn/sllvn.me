@@ -1,5 +1,6 @@
 +++
 date = "2024-11-21T02:54:00Z"
+title = "Seattle"
 +++
 
 Ayer regresé a Seattle y me di cuento de nuevo que lo es un ciudad muy hermosa. La agua, las montañas, la naturaleza… Creo que la mas hermosa lugar en EEUU. Va a estar difícil dejar, pero voy a decir mis despedidas con unos viajes de fotografía. Tomé unos fotos por el avion durante nuestro aproximación.

@@ -1,5 +1,6 @@
 +++
 date = "2025-03-25T23:42:00Z"
+title = "Un año en Argentina"
 +++
 
 Un año pasado, los 25 de marzo, entré en Argentina por la primera vez. Desde entonces, he pasado 221 días por sus fronteras. He aprendiendo mucho sobre el país en esto año y todavía me parece que conozco nada. “No lo entenderías” es verdad. Y en esto año, mucho ha cambiado, personalmente y en el mundo.

@@ -1,5 +1,6 @@
 +++
 date = "2025-06-27T08:00:00Z"
+title = "Jujuy/Salta"
 +++
 
 Hace dos semanas, algunos amigos y yo fuimos a Jujuy y Salta. Volamos a San Salvador de Jujuy, pasamos una noche allá, y manejamos a un pueblo que se llama Iruya, donde pasamos tres dias.

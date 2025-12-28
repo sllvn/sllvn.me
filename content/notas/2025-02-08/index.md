@@ -1,5 +1,6 @@
 +++
 date = "2025-02-08T18:52:00Z"
+title = "Buenos Aires"
 +++
 
 He estado un tiempo largo desde que mi ultimo blog.

@@ -1,5 +1,6 @@
 +++
 date = "2024-11-23T01:45:00Z"
+title = "Portland"
 +++
 
 Ayer fui a Portland para comprar un celular nuevo. Cuando visité Argentina, específicamente Mendoza y Aconcagua, tomé muchas fotos pero la cualidad no estaba bueno con mi celular viejo, particularmente con zoom. Tengo una camera verdad, pero nunca lo traego en mis viajes, porque el peso es importante. Asi que compré el nuevo iPhone con un genial zoom. Hasta ahora, estoy feliz con la camera. Es un poco "grainy" a veces con el zoom digital, pero con el zoom óptico es muy bien.
