@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sllvn//</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="/global.css" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
+  <link rel="alternate" type="application/atom+xml" title="All posts" href="/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Blog (English)" href="/blog/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Notas (Español)" href="/notas/atom.xml" />
+</head>
+<body>
+  <main>
+		<h1><a href='/'>sllvn//</a></h1>
+		
+<article>
+	
+		<h2>Angular controller dependency injection with Coffeescript</h2>
+		<div class="date">2013-08-06</div>
+	
+	<p>After reading that Angular’s new “controller as” syntax available in 1.1.5 works quite nicely with Coffeescript, I was inspired to port some existing Javascript/Angular code to Coffeescript. What was not immediately apparent, however, was how to inject dependencies when using a Coffeescript class as the meat of an Angular controller.</p>
+<p>I finally settled upon something like this:</p>
+<pre data-lang="javascript" class="language-javascript z-code"><code class="language-javascript" data-lang="javascript"><span class="z-source z-ts"><span class="z-variable z-other z-object z-ts">myApp</span><span class="z-punctuation z-accessor z-ts">.</span><span class="z-variable z-other z-property z-ts">controller</span> <span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>YoloController<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-punctuation z-separator z-comma z-ts">,</span><span class="z-meta z-array z-literal z-ts"> <span class="z-meta z-brace z-square z-ts">[</span><span class="z-string z-quoted z-single z-ts"><span class="z-punctuation z-definition z-string z-begin z-ts">&#39;</span>$resource<span class="z-punctuation z-definition z-string z-end z-ts">&#39;</span></span><span class="z-punctuation z-separator z-comma z-ts">,</span>
+  <span class="z-meta z-class z-ts"><span class="z-storage z-type z-class z-ts">class</span> <span class="z-entity z-name z-type z-class z-ts">YoloController</span>
+    <span class="z-entity z-name z-type z-class z-ts">constructor</span>: (<span class="z-entity z-name z-type z-class z-ts">$resource</span>) -&gt;
+      @<span class="z-entity z-name z-type z-class z-ts">Hipster</span> = <span class="z-entity z-name z-type z-class z-ts">$resource</span>(&#39;/<span class="z-entity z-name z-type z-class z-ts">hipsters</span>&#39;)
+      @<span class="z-entity z-name z-type z-class z-ts">hipsters</span> = @<span class="z-entity z-name z-type z-class z-ts">Hipsters</span>.<span class="z-entity z-name z-type z-class z-ts">query</span>()
+]
+</span></span></span></code></pre>
+<p>Obviously, you would want to move this resource into a service. And if you needed to use the injection in other class methods, you would want to assign it to a class variable, using Coffeescript’s convenient constructor assignment syntax (note the @ sign): <code>constructor: (@$resource) -&gt;</code></p>
+
+</article>
+
+<div class="image-gallery">
+	
+</div>
+
+
+  </main>
+</body>
+</html>
