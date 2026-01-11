@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sllvn//</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="/global.css" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
+  <link rel="alternate" type="application/atom+xml" title="All posts" href="/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Blog (English)" href="/blog/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Notas (Español)" href="/notas/atom.xml" />
+</head>
+<body>
+  <main>
+		<h1><a href='/'>sllvn//</a></h1>
+		
+<article>
+	
+		<h2>Composable web components</h2>
+		<div class="date">2023-11-26</div>
+	
+	<p>I've been enjoying the resurgent buzz around web components (specifically custom elements). The idea <em>du jour</em> seems to be &quot;HTML Web Components&quot;, ie, treating components as another form of progressive enhancement: wrap normal HTML content with a custom element, so that the normal content gets enhanced with the web component's behavior. E.g. something like the following to render a custom audio player:</p>
+<pre data-lang="html" class="language-html z-code"><code class="language-html" data-lang="html"><span class="z-text z-html z-basic"><span class="z-meta z-tag z-custom z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;</span></span><span class="z-meta z-tag z-custom z-html"><span class="z-entity z-name z-tag z-custom z-html">my-player</span><span class="z-punctuation z-definition z-tag z-end z-html">&gt;</span></span>
+  <span class="z-meta z-tag z-inline z-any z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;</span><span class="z-entity z-name z-tag z-inline z-any z-html">audio</span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">src</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-double z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&quot;</span>podcast.mp3<span class="z-punctuation z-definition z-string z-end z-html">&quot;</span></span></span> <span class="z-punctuation z-definition z-tag z-end z-html">/&gt;</span></span>
+<span class="z-meta z-tag z-custom z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;/</span></span><span class="z-meta z-tag z-custom z-html"><span class="z-entity z-name z-tag z-custom z-html">my-player</span><span class="z-punctuation z-definition z-tag z-end z-html">&gt;</span></span>
+</span></code></pre>
+<p>But what about wrapping non-standard HTML elements? If the idea is progressive enhancement, why not also enhance web components? <a href="https://github.com/zachleat">Zach</a> at 11ty <a href="https://is-land.11ty.dev/">created an <code>&lt;is-land&gt;</code> component</a> with this idea in mind (it handles boring-but-necessary stuff like loading and rendering). A straightforward example is providing controls for the behavior of child components.</p>
+<script type='text/javascript' src='./script.js'></script>
+<style>
+  svg {
+    border: 1px solid var(--primary);
+    max-width: 500px;
+    max-height: 500px;
+  }
+</style>
+<p>Here we have an ordinary Game of Life component (written largely by Copilot). It accepts a couple attributes to control its behavior.</p>
+<pre data-lang="html" class="language-html z-code"><code class="language-html" data-lang="html"><span class="z-text z-html z-basic"><span class="z-meta z-tag z-custom z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;</span></span><span class="z-meta z-tag z-custom z-html"><span class="z-entity z-name z-tag z-custom z-html">game-of-life</span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">size</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>25<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">speed</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>100<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-punctuation z-definition z-tag z-end z-html">/&gt;</span></span>
+</span></code></pre>
+<game-of-life size='25' speed='100' />
+<p>Now let's create that wrapper component and let <em>it</em> set those rules:</p>
+<pre data-lang="html" class="language-html z-code"><code class="language-html" data-lang="html"><span class="z-text z-html z-basic"><span class="z-meta z-tag z-custom z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;</span></span><span class="z-meta z-tag z-custom z-html"><span class="z-entity z-name z-tag z-custom z-html">game-config</span><span class="z-punctuation z-definition z-tag z-end z-html">&gt;</span></span>
+  <span class="z-meta z-tag z-inline z-form z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;</span><span class="z-entity z-name z-tag z-inline z-form z-html">input</span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">name</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>speed<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">type</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>range<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">min</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>50<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">max</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>1000<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">value</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>100<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-punctuation z-definition z-tag z-end z-html">/&gt;</span></span>
+  <span class="z-meta z-tag z-inline z-form z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;</span><span class="z-entity z-name z-tag z-inline z-form z-html">input</span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">name</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>size<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">type</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>range<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">min</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>10<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">max</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>100<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">value</span><span class="z-punctuation z-separator z-key-value z-html">=</span><span class="z-string z-quoted z-single z-html"><span class="z-punctuation z-definition z-string z-begin z-html">&#39;</span>50<span class="z-punctuation z-definition z-string z-end z-html">&#39;</span></span></span> <span class="z-punctuation z-definition z-tag z-end z-html">/&gt;</span></span>
+
+  <span class="z-meta z-tag z-custom z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;</span></span><span class="z-meta z-tag z-custom z-html"><span class="z-entity z-name z-tag z-custom z-html">game-of-life</span> <span class="z-meta z-attribute-with-value z-html"><span class="z-entity z-other z-attribute-name z-html">data-configurable</span> </span><span class="z-punctuation z-definition z-tag z-end z-html">/&gt;</span></span>
+<span class="z-meta z-tag z-custom z-html"><span class="z-punctuation z-definition z-tag z-begin z-html">&lt;/</span></span><span class="z-meta z-tag z-custom z-html"><span class="z-entity z-name z-tag z-custom z-html">game-config</span><span class="z-punctuation z-definition z-tag z-end z-html">&gt;</span></span>
+</span></code></pre>
+<game-config>
+  <input name='speed' type='range' min='50' max='1000' value='100' />
+  <input name='size' type='range' min='10' max='100' value='50' />
+<game-of-life data-configurable />
+</game-config>
+<p>By making <code>game-of-life</code> responsive to changes passed down by <code>game-config</code> (<em>a la</em> <a href="https://react.dev/learn/passing-data-deeply-with-context">React context</a>), it's much more re-usable. Consumers can use sliders, numeric inputs, and other custom elements to set speed+size and <code>game-of-life</code> reacts appropriately.</p>
+<p>Component full source can be found at <a href='./script.js'>script.js</a></p>
+
+</article>
+
+<div class="image-gallery">
+	
+</div>
+
+
+  </main>
+</body>
+</html>
