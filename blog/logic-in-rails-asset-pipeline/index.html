@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sllvn//</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="/global.css" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
+  <link rel="alternate" type="application/atom+xml" title="All posts" href="/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Blog (English)" href="/blog/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Notas (Español)" href="/notas/atom.xml" />
+</head>
+<body>
+  <main>
+		<h1><a href='/'>sllvn//</a></h1>
+		
+<article>
+	
+		<h2>Add logic to your Rails asset pipeline manifests</h2>
+		<div class="date">2013-09-22</div>
+	
+	<p>Recently, while reading <a href="https://github.com/discourse/discourse">Discourse’s source code</a>, I learned that Rails asset pipeline Javascript/CSS manifests are just plain old JS/CSS files and can be passed through a templating engine. This means you can add the .erb extension to add logic. This is useful if you want to use a prod-only CDN, serve dev-only Javascript debug code, or in Discourse’s case, dynamically load plugin assets.</p>
+<p>When including assets from Ruby code in your manifest, use Sprocket’s <code>require_asset</code> method (<a href="https://www.rubydoc.info/github/sstephenson/sprockets/Sprockets/Context:require_asset">rubydoc</a>).</p>
+<p>From <a href="https://github.com/discourse/discourse/blob/ef82b66e95324805e3d3d982d2052c52eee4eca7/app/assets/javascripts/application.js.erb">Discourse’s application.js.erb</a>:</p>
+<pre data-lang="ruby" class="language-ruby z-code"><code class="language-ruby" data-lang="ruby"><span class="z-source z-ruby"><span class="z-meta z-string z-regexp z-ruby"><span class="z-string z-regexp z-classic z-ruby"><span class="z-punctuation z-definition z-string z-begin z-ruby">/</span><span class="z-punctuation z-definition z-string z-end z-ruby">/</span></span></span><span class="z-keyword z-operator z-assignment z-ruby">=</span> <span class="z-meta z-require z-ruby"><span class="z-keyword z-other z-special-method z-ruby">require</span> <span class="z-punctuation z-accessor z-dot z-ruby">.</span><span class="z-keyword z-operator z-arithmetic z-ruby">/</span>env</span>
+<span class="z-meta z-string z-regexp z-ruby"><span class="z-string z-regexp z-classic z-ruby"><span class="z-punctuation z-definition z-string z-begin z-ruby">/</span><span class="z-punctuation z-definition z-string z-end z-ruby">/</span></span></span><span class="z-keyword z-operator z-assignment z-ruby">=</span> <span class="z-meta z-require z-ruby"><span class="z-keyword z-other z-special-method z-ruby">require</span> <span class="z-punctuation z-accessor z-dot z-ruby">.</span><span class="z-keyword z-operator z-arithmetic z-ruby">/</span>discourse<span class="z-keyword z-operator z-arithmetic z-ruby">/</span>components<span class="z-keyword z-operator z-arithmetic z-ruby">/</span>probes<span class="z-punctuation z-accessor z-dot z-ruby">.</span>js</span>
+
+<span class="z-keyword z-operator z-comparison z-ruby">&lt;</span><span class="z-keyword z-operator z-arithmetic z-ruby">%</span>
+<span class="z-comment z-line z-number-sign z-ruby"><span class="z-punctuation z-definition z-comment z-ruby">#</span> ...
+</span>
+<span class="z-keyword z-control z-ruby">if</span> <span class="z-support z-class z-ruby">Rails</span><span class="z-punctuation z-accessor z-dot z-ruby">.</span>env<span class="z-punctuation z-accessor z-dot z-ruby">.</span>development?
+  require_asset <span class="z-punctuation z-definition z-group z-begin z-ruby">(</span><span class="z-meta z-string z-ruby"><span class="z-string z-quoted z-double z-ruby"><span class="z-punctuation z-definition z-string z-begin z-ruby">&quot;</span>./external_development/ember.js<span class="z-punctuation z-definition z-string z-end z-ruby">&quot;</span></span></span><span class="z-punctuation z-definition z-group z-end z-ruby">)</span>
+<span class="z-keyword z-control z-ruby">else</span>
+  require_asset <span class="z-punctuation z-definition z-group z-begin z-ruby">(</span><span class="z-meta z-string z-ruby"><span class="z-string z-quoted z-double z-ruby"><span class="z-punctuation z-definition z-string z-begin z-ruby">&quot;</span>./external_production/ember.js<span class="z-punctuation z-definition z-string z-end z-ruby">&quot;</span></span></span><span class="z-punctuation z-definition z-group z-end z-ruby">)</span>
+<span class="z-keyword z-control z-ruby">end</span>
+
+require_asset <span class="z-punctuation z-definition z-group z-begin z-ruby">(</span><span class="z-meta z-string z-ruby"><span class="z-string z-quoted z-double z-ruby"><span class="z-punctuation z-definition z-string z-begin z-ruby">&quot;</span>./main_include.js<span class="z-punctuation z-definition z-string z-end z-ruby">&quot;</span></span></span><span class="z-punctuation z-definition z-group z-end z-ruby">)</span>
+
+<span class="z-comment z-line z-number-sign z-ruby"><span class="z-punctuation z-definition z-comment z-ruby">#</span> Include plugin javascripts
+</span><span class="z-support z-class z-ruby">DiscoursePluginRegistry</span><span class="z-punctuation z-accessor z-dot z-ruby">.</span>javascripts<span class="z-punctuation z-accessor z-dot z-ruby">.</span>each <span class="z-keyword z-control z-start-block z-ruby">do</span> <span class="z-meta z-block z-parameters z-ruby"><span class="z-punctuation z-definition z-parameters z-begin z-ruby">|</span></span><span class="z-meta z-block z-parameters z-ruby"><span class="z-variable z-parameter z-ruby">js</span><span class="z-meta z-block z-parameters z-ruby"><span class="z-punctuation z-definition z-parameters z-end z-ruby">|</span></span></span>
+  require_asset<span class="z-punctuation z-definition z-group z-begin z-ruby">(</span>js<span class="z-punctuation z-definition z-group z-end z-ruby">)</span>
+<span class="z-keyword z-control z-ruby">end</span>
+<span class="z-meta z-string z-ruby"><span class="z-string z-quoted z-other z-literal z-other z-ruby"><span class="z-punctuation z-definition z-string z-begin z-ruby">%&gt;</span>
+</span></span></span></code></pre>
+
+</article>
+
+<div class="image-gallery">
+	
+</div>
+
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sllvn//</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="/global.css" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
+  <link rel="alternate" type="application/atom+xml" title="All posts" href="/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Blog (English)" href="/blog/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Notas (Español)" href="/notas/atom.xml" />
+</head>
+<body>
+  <main>
+		<h1><a href='/'>sllvn//</a></h1>
+		
+<article>
+	
+		<h2>Simple ETL with bash, jq, and SQLite</h2>
+		<div class="date">2020-01-29</div>
+	
+	<p>I run a couple simple ETL pipelines for side projects, and after experimenting with Lambda to kick off Python jobs (and finding it frustrating), I've settled on simple bash scripts (along with <a href="https://github.com/stedolan/jq">the awesome <code>jq</code> util</a>) run via cron on a DigitalOcean instance. Not only is it more stable, but I've found it to be much faster. Recently, <a href="https://news.ycombinator.com/item?id=22153390">a thread on HN</a> convinced me to try adding SQLite to the mix, and I've been happy with the results.</p>
+<p>For my Twitter timeline scrape, I run <a href="https://gist.github.com/sllvn/1a734d1f0c195995a9166ad309664e3f">a script</a> every five minutes that scrapes the last 200 timeline tweets (via <a href="https://github.com/twitter/twurl"><code>twurl</code></a>), converts the JSON into a CSV, and imports that CSV into a SQLite db. A unique key on the <code>id</code> col prevents duplicates, and so far the setup has proven solid.</p>
+<p>The trick is using <code>jq</code>'s <code>@csv</code> filter (along with the <code>-r</code> flag to not escape output as JSON) to output the tweets to CSV:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>id,created_at,user_id,screen_name,is_retweet,text<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> tweets.csv</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">jq</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>r</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>.[] | [.id, .created_at, .user.id, .user.screen_name, .retweeted_status != null, .text] | @csv<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> data/tweets.json <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;&gt;</span> tweets.csv</span>
+</span></code></pre>
+<p>Then all that remains is to import the CSV into your SQLite db:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sqlite3</span></span><span class="z-meta z-function-call z-arguments z-shell"> tweets.sqlite<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>cmd</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>.mode csv<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>.import tweets.csv tweets<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span></span>
+</span></code></pre>
+<p>You can pass a single command to <code>sqlite3</code>'s CLI, but when you need to chain multiple commands (as importing from CSV requires <code>.mode csv</code>), use the <code>-cmd</code> flag for each of the first N-1 commands (listed commands will be executed in order).</p>
+<p>The <a href="https://news.ycombinator.com/item?id=22153390">HN thread</a> gives some tips (recommended SQLite pragmas, etc.) on how to use this with larger pipelines, and I look forward to using this with my transit scraper (1000s of vehicle locations updating every minute).</p>
+
+</article>
+
+<div class="image-gallery">
+	
+</div>
+
+
+  </main>
+</body>
+</html>
