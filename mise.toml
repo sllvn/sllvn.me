@@ -8,3 +8,13 @@ run = "zola serve"
 [tasks.build]
 description = "Build site locally (for debugging)"
 run = "zola build"
+
+[tasks.new-post]
+description = "Create a new blog post skeleton"
+raw = true
+run = "uv run newpost.py"
+
+[tasks.new-nota]
+description = "Create a new nota skeleton"
+raw = true
+run = "uv run newpost.py --notas"
