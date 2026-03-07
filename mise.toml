@@ -18,3 +18,8 @@ run = "uv run newpost.py"
 description = "Create a new nota skeleton"
 raw = true
 run = "uv run newpost.py --notas"
+
+[tasks.resize-image]
+description = "Resize and optimize an image for posts"
+raw = true
+run = "uv run resize_image.py"
