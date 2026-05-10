@@ -2,7 +2,7 @@
 {% import "shortcodes/date_title.html" as date_title %}
 
 {% block content %}
-<article>
+<article class="post">
 	{% if page.title %}
 		<h2>{{ page.title }}</h2>
 		<div class="date">{{ page.date | date(format="%Y-%m-%d") }}</div>

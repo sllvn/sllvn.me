@@ -1,0 +1,3 @@
+{% set note_prefix = page.slug | default(value="note") -%}
+{% set note_id = "sidenote-" ~ note_prefix ~ "-" ~ nth -%}
+<input type="checkbox" id="{{ note_id }}" class="sidenote-toggle"><label for="{{ note_id }}" class="sidenote-ref"><sup>{{ nth }}</sup></label><span class="sidenote"><span class="sidenote-number">{{ nth }}</span> {{ text | markdown(inline=true) | safe }}</span>

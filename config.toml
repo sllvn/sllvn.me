@@ -10,6 +10,7 @@ feed_filenames = ["atom.xml"]
 [markdown]
 highlight_code = true
 highlight_theme = "css"
+bottom_footnotes = true
 highlight_themes_css = [
   { theme = "monokai", filename = "syntax-theme-dark.css" },
   { theme = "solarized-light", filename = "syntax-theme-light.css" },

@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>sllvn//</title>
+  {% set page_title = page.title | default(value=section.title | default(value=config.title)) %}
+  {% set page_url = page.permalink | default(value=section.permalink | default(value=config.base_url)) %}
+  {% set content_desc = page.content | default(value="") | striptags | trim | truncate(length=200) %}
+  {% set page_desc = page.description | default(value=content_desc | default(value=config.description | default(value=""))) %}
+  {% set og_image = config.base_url ~ "/og-image.png" %}
+  <title>{% if page.title or section.title %}{{ page_title }} — {{ config.title }}{% else %}{{ config.title }}{% endif %}</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
+  <meta name="description" content="{{ page_desc }}" />
+
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:description" content="{{ page_desc }}" />
+  <meta property="og:url" content="{{ page_url | safe }}" />
+  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}" />
+  <meta property="og:site_name" content="{{ config.title }}" />
+  <meta property="og:image" content="{{ og_image | safe }}" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page_title }}" />
+  <meta name="twitter:description" content="{{ page_desc }}" />
+  <meta name="twitter:image" content="{{ og_image | safe }}" />
+
   <link rel="stylesheet" type="text/css" href="/global.css" />
   <link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
   <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
