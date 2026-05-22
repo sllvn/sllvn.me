@@ -189,13 +189,16 @@ article > hr + .footnotes-list {
   .dark-invert { filter: invert(1); }
 }
 
-@media (min-width: 78rem) {
+@media (min-width: 48rem) and (min-height: 36rem), (min-width: 78rem) {
   main:has(article.post .sidenote) {
-    max-width: 64rem;
+    --sidenote-width: clamp(8.5rem, 28vw, 13.5rem);
+    --sidenote-gap: clamp(0.75rem, 3vw, 1.5rem);
+    --sidenote-offset: calc(var(--sidenote-width) + var(--sidenote-gap));
+    max-width: 45rem;
   }
 
   article.post:has(.sidenote) {
-    max-width: 41rem;
+    max-width: min(41rem, calc(100% - var(--sidenote-offset)));
   }
 
   .sidenote {
@@ -204,28 +207,58 @@ article > hr + .footnotes-list {
     display: block;
     float: right;
     clear: right;
-    width: 20rem;
-    margin: 0.25rem -23rem 1rem 3rem;
-    padding-left: 1.75rem;
+    width: var(--sidenote-width);
+    margin: 0.25rem calc(var(--sidenote-offset) * -1) 1rem var(--sidenote-gap);
+    padding-left: 1.25rem;
+    border-left: 0;
     font-size: 0.8125rem;
     line-height: 1.3;
   }
     .sidenote-number {
       float: left;
-      width: 1.5rem;
-      margin-left: -1.75rem;
+      width: 1rem;
+      margin-left: -1.25rem;
       padding-right: 0.25rem;
       text-align: right;
     }
 
   .sidenote-toggle:checked + .sidenote-ref + .sidenote {
     display: block;
-    margin: 0.25rem -23rem 1rem 3rem;
-    padding-left: 1.75rem;
+    margin: 0.25rem calc(var(--sidenote-offset) * -1) 1rem var(--sidenote-gap);
+    padding-left: 1.25rem;
     border-left: 0;
     font-size: 0.8125rem;
     line-height: 1.3;
   }
+}
+
+@media (min-width: 48rem) and (max-width: 77.999rem) and (min-height: 36rem) {
+  main:has(article.post .sidenote) {
+    max-width: none;
+    padding: 2rem 3rem;
+  }
+
+  article.post:has(.sidenote) {
+    line-height: 1.65;
+  }
+}
+
+@media (min-width: 78rem) {
+  main:has(article.post .sidenote) {
+    --sidenote-width: 20rem;
+    --sidenote-gap: 3rem;
+    max-width: 64rem;
+  }
+
+  .sidenote {
+    width: var(--sidenote-width);
+    margin: 0.25rem calc(var(--sidenote-offset) * -1) 1rem var(--sidenote-gap);
+    padding-left: 1.75rem;
+  }
+    .sidenote-number {
+      width: 1.5rem;
+      margin-left: -1.75rem;
+    }
 }
 
 @media (max-width: 60rem) {
