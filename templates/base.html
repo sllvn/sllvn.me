@@ -5,7 +5,11 @@
   {% set page_url = page.permalink | default(value=section.permalink | default(value=config.base_url)) %}
   {% set content_desc = page.content | default(value="") | striptags | trim | truncate(length=200) %}
   {% set page_desc = page.description | default(value=content_desc | default(value=config.description | default(value=""))) %}
-  {% set og_image = config.base_url ~ "/og-image.png" %}
+  {% if page.date %}
+    {% set og_image = config.base_url ~ "/og" ~ page.path ~ "index.png" %}
+  {% else %}
+    {% set og_image = config.base_url ~ "/og/default.png" %}
+  {% endif %}
   <title>{% if page.title or section.title %}{{ page_title }} — {{ config.title }}{% else %}{{ config.title }}{% endif %}</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />

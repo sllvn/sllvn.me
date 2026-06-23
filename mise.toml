@@ -3,11 +3,11 @@ zola = "0.19.2"
 
 [tasks.dev]
 description = "Start development server"
-run = "zola serve"
+run = "uv run generate_og_images.py && zola serve"
 
 [tasks.build]
 description = "Build site locally (for debugging)"
-run = "zola build"
+run = "uv run generate_og_images.py && zola build"
 
 [tasks.new-post]
 description = "Create a new blog post skeleton"
