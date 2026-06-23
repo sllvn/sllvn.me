@@ -1,6 +1,7 @@
 ---
 date: "2025-07-20T16:00:00"
 title: "Creating a map of Argentina's rivers"
+summary: "A quick experiment using public data to vibe code a map of Argentina's waterways."
 ---
 
 {{ img(src="./assets/argentina_rivers.png", class="dark-invert", alt="Map of Argentina rivers") }}

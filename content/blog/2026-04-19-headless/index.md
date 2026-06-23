@@ -1,6 +1,7 @@
 ---
 date: "2026-04-19T12:00:00Z"
 title: "The future of SaaS is headless"
+summary: "With implementation complexity solved, what value is left with SaaS?"
 ---
 
 Many software-as-a-service companies have been built almost entirely on implementation complexity. I've worked for a couple of them and the moat was the difficulty of building and scaling the system. One of them even believed that we should not try to be a database, that we were a "system of action". But we were technically competent and we out-executed the competition (at least in the early days), so for a while we had success.

@@ -1,6 +1,7 @@
 ---
 date: "2025-06-03T11:15:00"
 title: "Shopify web components"
+summary: "Shopify's storefront web components use a variety of patterns and demonstrate their versatility."
 ---
 
 As mentioned [previously](/blog/composable-web-components/), composable web components are the future.

@@ -1,6 +1,7 @@
 ---
 date: "2026-05-09T12:00:00Z"
 title: "An early survey of LLM harnesses"
+summary: "As model intelligence pleateaus and commoditizes, the scaffolding around it becomes more important."
 ---
 
 Recently, buzz around LLMs has shifted from the models themselves (intelligence) to the harnesses (scaffolding). The "harness" is the tools, runtime, and instructions that turn an LLM into an agent. Things like "skills" and "memory" are all provided by the harness, sent as text into the model. For a while the engineering community was focused on "prompt engineering", then "agentic engineering", but in the past few months, it's turned almost entirely to "harness engineering".

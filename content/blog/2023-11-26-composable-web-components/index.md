@@ -1,6 +1,7 @@
 ---
 date: "2023-11-26T13:22:00"
 title: "Composable web components"
+summary: "Web components are the way forward for sharing embeddable code on the web. Headless wrapper components push their reusability even further."
 ---
 
 I've been enjoying the resurgent buzz around web components (specifically custom elements). The idea *du jour* seems to be "HTML Web Components", ie, treating components as another form of progressive enhancement: wrap normal HTML content with a custom element, so that the normal content gets enhanced with the web component's behavior. E.g. something like the following to render a custom audio player:

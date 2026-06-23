@@ -1,6 +1,7 @@
 ---
 date: "2020-01-29T13:22:00"
 title: "Simple ETL with bash, jq, and SQLite"
+summary: "How using simple shell tools for infra-lite data analysis might be better than popular solutions."
 ---
 
 I run a couple simple ETL pipelines for side projects, and after experimenting with Lambda to kick off Python jobs (and finding it frustrating), I've settled on simple bash scripts (along with [the awesome `jq` util](https://github.com/stedolan/jq)) run via cron on a DigitalOcean instance. Not only is it more stable, but I've found it to be much faster. Recently, [a thread on HN](https://news.ycombinator.com/item?id=22153390) convinced me to try adding SQLite to the mix, and I've been happy with the results.
