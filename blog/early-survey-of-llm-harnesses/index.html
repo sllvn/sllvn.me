@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  
+  
+  
+    
+  
+  <title>An early survey of LLM harnesses — sllvn&#x2F;&#x2F;</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Recently, buzz around LLMs has shifted from the models themselves (intelligence) to the harnesses (scaffolding). The &quot;harness&quot; is the tools, runtime, and instructions that turn an LLM into an agent. T…" />
+
+  <meta property="og:title" content="An early survey of LLM harnesses" />
+  <meta property="og:description" content="Recently, buzz around LLMs has shifted from the models themselves (intelligence) to the harnesses (scaffolding). The &quot;harness&quot; is the tools, runtime, and instructions that turn an LLM into an agent. T…" />
+  <meta property="og:url" content="https://sllvn.me/blog/early-survey-of-llm-harnesses/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="sllvn&#x2F;&#x2F;" />
+  <meta property="og:image" content="https://sllvn.me/og/blog/early-survey-of-llm-harnesses/index.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="An early survey of LLM harnesses" />
+  <meta name="twitter:description" content="Recently, buzz around LLMs has shifted from the models themselves (intelligence) to the harnesses (scaffolding). The &quot;harness&quot; is the tools, runtime, and instructions that turn an LLM into an agent. T…" />
+  <meta name="twitter:image" content="https://sllvn.me/og/blog/early-survey-of-llm-harnesses/index.png" />
+
+  <link rel="stylesheet" type="text/css" href="/global.css" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
+  <link rel="alternate" type="application/atom+xml" title="All posts" href="/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Blog (English)" href="/blog/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Notas (Español)" href="/notas/atom.xml" />
+</head>
+<body>
+  <main>
+		<h1><a href='/'>sllvn//</a></h1>
+		
+<article class="post">
+	
+		<h2>An early survey of LLM harnesses</h2>
+		<div class="date">2026-05-09</div>
+	
+	<p>Recently, buzz around LLMs has shifted from the models themselves (intelligence) to the harnesses (scaffolding). The "harness" is the tools, runtime, and instructions that turn an LLM into an agent. Things like "skills" and "memory" are all provided by the harness, sent as text into the model. For a while the engineering community was focused on "prompt engineering", then "agentic engineering", but in the past few months, it's turned almost entirely to "harness engineering".</p>
+<p>There were earlier implementations of agentic loops, but Claude Code (February 2025) was the first popular tool to get people thinking about harnesses (though that word wasn't yet in use). It demonstrated the utility of frontier models combined with the right scaffolding.<input type="checkbox" id="sidenote-early-survey-of-llm-harnesses-1" class="sidenote-toggle"><label for="sidenote-early-survey-of-llm-harnesses-1" class="sidenote-ref"><sup>1</sup></label><span class="sidenote"><span class="sidenote-number">1</span> <a href="https://blog.nilenso.com/blog/2026/02/10/how-system-prompts-define-agent-behaviiour/">System prompts are tuned to specific models</a>. Someday they might be more generalizable, but currently OpenAI and Anthropic spend tons of effort refining their harness's system prompts.</span>
+ OpenAI's Codex (May 2025) and open source harnesses like <a href="https://opencode.ai/">Opencode</a> (June 2025) and <a href="https://pi.dev/">Pi</a> (November 2025)<input type="checkbox" id="sidenote-early-survey-of-llm-harnesses-2" class="sidenote-toggle"><label for="sidenote-early-survey-of-llm-harnesses-2" class="sidenote-ref"><sup>2</sup></label><span class="sidenote"><span class="sidenote-number">2</span> Mario Eichner's <a href="https://mariozechner.at/posts/2025-11-30-pi-coding-agent/">post introducing Pi</a> is essential reading for anyone interested in harness engineering</span>
+ were quick to follow, but Claude Code had first-mover advantage and for a while it was a better product: both in results and developer experience. The idea - frontier models running in a loop, calling local tools, using a finely-tuned system prompt - proved very effective.</p>
+<p>In December 2025, OpenClaw (originally "Clawdbot") brought agents to the masses: what happens if instead of limiting to coding tools you give the model access to everything: your email, your contacts, your data... your computer? It was a security nightmare but showed the potential of personal agents. The project took off like <a href="https://www.star-history.com/?repos=openclaw%2Fopenclaw&amp;type=date&amp;legend=top-left">wildfire</a>, and Mac Minis remain difficult to purchase five months later: everybody wants to run their own agent against a local LLM.<input type="checkbox" id="sidenote-early-survey-of-llm-harnesses-3" class="sidenote-toggle"><label for="sidenote-early-survey-of-llm-harnesses-3" class="sidenote-ref"><sup>3</sup></label><span class="sidenote"><span class="sidenote-number">3</span> I find it interesting that people accept OpenClaw's lax attitude toward security while simultaneously having paranoia over using OpenAI / Anthropic.</span>
+</p>
+<p>In March 2026, Anthropic's actions indicated that they view their harness as a potential moat. Coinciding with hyperscaling challenges, they began to lock it down. They blocked third-party use of their subscription plans, and continued to take an aggressive stance against open source harnesses. This, alongside <a href="https://www.anthropic.com/engineering/april-23-postmortem">some harness bugs causing degraded performance</a> and opaque billing changes, burned a lot of developer goodwill. OpenAI capitalized on the crisis and many developers jumped ship, realizing that Codex had caught up both as a harness and as a model.</p>
+<p>As of May 2025, Codex is the superior harness. OpenAI has understood agentic engineering workflows better and built a great desktop coding app. But at any moment this could change: a new model could launch, local LLMs could become viable, OpenAI and Anthropic token pricing will change. For this reason, open harnesses, especially Pi (built on simplicity and context transparency), remain viable.</p>
+<p>Today all the energy is about harnesses: everybody is writing pieces on harness engineering, there are now <a href="https://flueframework.com/">harness meta-frameworks</a>... I've even realized my own project <a href="https://teambook.ai">Teambook</a>, is a harness. But the core idea remains the same: <a href="https://simonwillison.net/2025/May/22/tools-in-a-loop/">model + tools + instructions, running in a loop</a>.</p>
+
+</article>
+
+<div class="image-gallery">
+	
+</div>
+
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>sllvn&#x2F;&#x2F;</title>
+    <link rel="self" type="application/atom+xml" href="https://sllvn.me/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://sllvn.me"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-06-27T12:00:00+00:00</updated>
+    <id>https://sllvn.me/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Om Malik</title>
+        <published>2026-06-27T12:00:00+00:00</published>
+        <updated>2026-06-27T12:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/om-malik/"/>
+        <id>https://sllvn.me/blog/om-malik/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/om-malik/">&lt;p&gt;Om Malik &lt;a href=&quot;https:&#x2F;&#x2F;daringfireball.net&#x2F;2026&#x2F;06&#x2F;om&quot;&gt;died this week&lt;&#x2F;a&gt;. Om was a &lt;a href=&quot;https:&#x2F;&#x2F;om.co&#x2F;&quot;&gt;blogger&lt;&#x2F;a&gt; &#x2F; &lt;a href=&quot;https:&#x2F;&#x2F;glass.photo&#x2F;om&quot;&gt;photographer&lt;&#x2F;a&gt; &#x2F; tech journalist I&#x27;d followed for twenty years. He had a way of writing that held my attention, with a fluidity and a wisdom that is increasingly hard to find, without the cynicism that has taken hold of many.&lt;&#x2F;p&gt;
+&lt;p&gt;He suffered a heart attack twenty years ago, at about the age I am today, and afterward stepped back from the frantic world of tech journalism. He wrote less frequently, turning his attention to photography, but his words were wiser, more prescient. This year, he focused on the truth behind the modern tech hype cycle: that &lt;a href=&quot;https:&#x2F;&#x2F;om.co&#x2F;2026&#x2F;01&#x2F;21&#x2F;velocity-is-the-new-authority-heres-why&#x2F;&quot;&gt;velocity matters more than reality&lt;&#x2F;a&gt;, that &lt;a href=&quot;https:&#x2F;&#x2F;om.co&#x2F;2026&#x2F;05&#x2F;25&#x2F;we-are-living-in-pinocchios-world&#x2F;&quot;&gt;we allow the lies because we want them to be true&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;By all accounts, he lived a life of empathy, taking time to respond to complete strangers and always considerate of founders as people. He advised the tech industry to &lt;a href=&quot;https:&#x2F;&#x2F;www.newyorker.com&#x2F;business&#x2F;currency&#x2F;silicon-valley-has-an-empathy-vacuum&quot;&gt;consider the human consequences&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is time for our industry to pause and take a moment to think... Otherwise, come 2020, Silicon Valley will have become an even bigger villain in the popular imagination, much like its East Coast counterpart, Wall Street.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I never talked with Om, but after reading someone for so long, you feel a connection to their thoughts. His voice may be gone, but his writing is timeless.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>On the legibility of humans</title>
+        <published>2026-05-31T12:00:00+00:00</published>
+        <updated>2026-05-31T12:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/on-the-legibility-of-humans/"/>
+        <id>https://sllvn.me/blog/on-the-legibility-of-humans/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/on-the-legibility-of-humans/">&lt;p&gt;Ezra Klein recently described &lt;a href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;2026&#x2F;03&#x2F;29&#x2F;opinion&#x2F;ai-claude-chatgpt-gemini-mcluhan.html&quot;&gt;a strange anxiety taking hold in Silicon Valley&lt;&#x2F;a&gt;, that many technologists are increasingly concerned about improving the AI &quot;legibility&quot; of their lives.&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-on-the-legibility-of-humans-1&quot; class=&quot;sidenote-toggle&quot;&gt;&lt;label for=&quot;sidenote-on-the-legibility-of-humans-1&quot; class=&quot;sidenote-ref&quot;&gt;&lt;sup&gt;1&lt;&#x2F;sup&gt;&lt;&#x2F;label&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;span class=&quot;sidenote-number&quot;&gt;1&lt;&#x2F;span&gt; The irony is that LLMs are quite illegible themselves. Understandability remains an unsolved problem. Accountability is difficult not only because no human made the decision, but because we have no idea why the model reached its conclusion. And the emergence of intelligence from statistical token prediction seems more a philosophical debate more than a scientific one.&lt;&#x2F;span&gt;
+ Some are opting in willingly, &lt;a href=&quot;https:&#x2F;&#x2F;www.wsj.com&#x2F;tech&#x2F;ai&#x2F;ai-agents-work-executives-a38400e1?st=7ax3UY&amp;amp;reflink=desktopwebshare_permalink&quot;&gt;creating digital clones of themselves&lt;&#x2F;a&gt; to increase efficiency. But most of us are opted-in without consent. Corporations have used our data to maximize engagement and sell our attention, now it&#x27;s being used by states &lt;a href=&quot;https:&#x2F;&#x2F;www.lanacion.com.ar&#x2F;tecnologia&#x2F;javier-milei-anuncio-el-gemelo-digital-social-una-herramienta-impulsada-por-ia-para-mejorar-las-nid22052026&#x2F;&quot;&gt;to model human behavior&lt;&#x2F;a&gt;, nominally to inform policy decisions.&lt;&#x2F;p&gt;
+&lt;p&gt;Legibility is a necessary step in management: from corporations to &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Seeing_Like_a_State&quot;&gt;states&lt;&#x2F;a&gt;, now with our humanity. But &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Alfred_Korzybski&quot;&gt;the map is not the territory&lt;&#x2F;a&gt; and attempts to put legibility first frequently lead to bad outcomes: unfriendly cities through high modernist urbanism, ecosystem collapse through monoculture. Legibility is the first step in the pursuit of goals, but we must remember that targets are based on simplifications.&lt;&#x2F;p&gt;
+&lt;p&gt;All of this is to say that we&#x27;ve put the cart before the horse. As the recent Vatican encyclical warns: &lt;a href=&quot;https:&#x2F;&#x2F;www.vatican.va&#x2F;content&#x2F;leo-xiv&#x2F;en&#x2F;encyclicals&#x2F;documents&#x2F;20260515-magnifica-humanitas.html&quot;&gt;technology should be a tool that works for human dignity, not the other way around&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>An early survey of LLM harnesses</title>
+        <published>2026-05-09T12:00:00+00:00</published>
+        <updated>2026-05-09T12:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/early-survey-of-llm-harnesses/"/>
+        <id>https://sllvn.me/blog/early-survey-of-llm-harnesses/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/early-survey-of-llm-harnesses/">&lt;p&gt;Recently, buzz around LLMs has shifted from the models themselves (intelligence) to the harnesses (scaffolding). The &quot;harness&quot; is the tools, runtime, and instructions that turn an LLM into an agent. Things like &quot;skills&quot; and &quot;memory&quot; are all provided by the harness, sent as text into the model. For a while the engineering community was focused on &quot;prompt engineering&quot;, then &quot;agentic engineering&quot;, but in the past few months, it&#x27;s turned almost entirely to &quot;harness engineering&quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;There were earlier implementations of agentic loops, but Claude Code (February 2025) was the first popular tool to get people thinking about harnesses (though that word wasn&#x27;t yet in use). It demonstrated the utility of frontier models combined with the right scaffolding.&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-early-survey-of-llm-harnesses-1&quot; class=&quot;sidenote-toggle&quot;&gt;&lt;label for=&quot;sidenote-early-survey-of-llm-harnesses-1&quot; class=&quot;sidenote-ref&quot;&gt;&lt;sup&gt;1&lt;&#x2F;sup&gt;&lt;&#x2F;label&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;span class=&quot;sidenote-number&quot;&gt;1&lt;&#x2F;span&gt; &lt;a href=&quot;https:&#x2F;&#x2F;blog.nilenso.com&#x2F;blog&#x2F;2026&#x2F;02&#x2F;10&#x2F;how-system-prompts-define-agent-behaviiour&#x2F;&quot;&gt;System prompts are tuned to specific models&lt;&#x2F;a&gt;. Someday they might be more generalizable, but currently OpenAI and Anthropic spend tons of effort refining their harness&#x27;s system prompts.&lt;&#x2F;span&gt;
+ OpenAI&#x27;s Codex (May 2025) and open source harnesses like &lt;a href=&quot;https:&#x2F;&#x2F;opencode.ai&#x2F;&quot;&gt;Opencode&lt;&#x2F;a&gt; (June 2025) and &lt;a href=&quot;https:&#x2F;&#x2F;pi.dev&#x2F;&quot;&gt;Pi&lt;&#x2F;a&gt; (November 2025)&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-early-survey-of-llm-harnesses-2&quot; class=&quot;sidenote-toggle&quot;&gt;&lt;label for=&quot;sidenote-early-survey-of-llm-harnesses-2&quot; class=&quot;sidenote-ref&quot;&gt;&lt;sup&gt;2&lt;&#x2F;sup&gt;&lt;&#x2F;label&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;span class=&quot;sidenote-number&quot;&gt;2&lt;&#x2F;span&gt; Mario Eichner&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;mariozechner.at&#x2F;posts&#x2F;2025-11-30-pi-coding-agent&#x2F;&quot;&gt;post introducing Pi&lt;&#x2F;a&gt; is essential reading for anyone interested in harness engineering&lt;&#x2F;span&gt;
+ were quick to follow, but Claude Code had first-mover advantage and for a while it was a better product: both in results and developer experience. The idea - frontier models running in a loop, calling local tools, using a finely-tuned system prompt - proved very effective.&lt;&#x2F;p&gt;
+&lt;p&gt;In December 2025, OpenClaw (originally &quot;Clawdbot&quot;) brought agents to the masses: what happens if instead of limiting to coding tools you give the model access to everything: your email, your contacts, your data... your computer? It was a security nightmare but showed the potential of personal agents. The project took off like &lt;a href=&quot;https:&#x2F;&#x2F;www.star-history.com&#x2F;?repos=openclaw%2Fopenclaw&amp;amp;type=date&amp;amp;legend=top-left&quot;&gt;wildfire&lt;&#x2F;a&gt;, and Mac Minis remain difficult to purchase five months later: everybody wants to run their own agent against a local LLM.&lt;input type=&quot;checkbox&quot; id=&quot;sidenote-early-survey-of-llm-harnesses-3&quot; class=&quot;sidenote-toggle&quot;&gt;&lt;label for=&quot;sidenote-early-survey-of-llm-harnesses-3&quot; class=&quot;sidenote-ref&quot;&gt;&lt;sup&gt;3&lt;&#x2F;sup&gt;&lt;&#x2F;label&gt;&lt;span class=&quot;sidenote&quot;&gt;&lt;span class=&quot;sidenote-number&quot;&gt;3&lt;&#x2F;span&gt; I find it interesting that people accept OpenClaw&#x27;s lax attitude toward security while simultaneously having paranoia over using OpenAI &#x2F; Anthropic.&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;In March 2026, Anthropic&#x27;s actions indicated that they view their harness as a potential moat. Coinciding with hyperscaling challenges, they began to lock it down. They blocked third-party use of their subscription plans, and continued to take an aggressive stance against open source harnesses. This, alongside &lt;a href=&quot;https:&#x2F;&#x2F;www.anthropic.com&#x2F;engineering&#x2F;april-23-postmortem&quot;&gt;some harness bugs causing degraded performance&lt;&#x2F;a&gt; and opaque billing changes, burned a lot of developer goodwill. OpenAI capitalized on the crisis and many developers jumped ship, realizing that Codex had caught up both as a harness and as a model.&lt;&#x2F;p&gt;
+&lt;p&gt;As of May 2025, Codex is the superior harness. OpenAI has understood agentic engineering workflows better and built a great desktop coding app. But at any moment this could change: a new model could launch, local LLMs could become viable, OpenAI and Anthropic token pricing will change. For this reason, open harnesses, especially Pi (built on simplicity and context transparency), remain viable.&lt;&#x2F;p&gt;
+&lt;p&gt;Today all the energy is about harnesses: everybody is writing pieces on harness engineering, there are now &lt;a href=&quot;https:&#x2F;&#x2F;flueframework.com&#x2F;&quot;&gt;harness meta-frameworks&lt;&#x2F;a&gt;... I&#x27;ve even realized my own project &lt;a href=&quot;https:&#x2F;&#x2F;teambook.ai&quot;&gt;Teambook&lt;&#x2F;a&gt;, is a harness. But the core idea remains the same: &lt;a href=&quot;https:&#x2F;&#x2F;simonwillison.net&#x2F;2025&#x2F;May&#x2F;22&#x2F;tools-in-a-loop&#x2F;&quot;&gt;model + tools + instructions, running in a loop&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The future of SaaS is headless</title>
+        <published>2026-04-19T12:00:00+00:00</published>
+        <updated>2026-04-19T12:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/headless/"/>
+        <id>https://sllvn.me/blog/headless/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/headless/">&lt;p&gt;Many software-as-a-service companies have been built almost entirely on implementation complexity. I&#x27;ve worked for a couple of them and the moat was the difficulty of building and scaling the system. One of them even believed that we should not try to be a database, that we were a &quot;system of action&quot;. But we were technically competent and we out-executed the competition (at least in the early days), so for a while we had success.&lt;&#x2F;p&gt;
+&lt;p&gt;Today, these types of companies are dead (or dying). LLMs have killed the implementation complexity moat. Systems of &lt;em&gt;only&lt;&#x2F;em&gt; action are gone and unless you can offer more, it&#x27;s a race to zero. Integration and switching costs are much cheaper when you can easily map from one format to another, something LLMs excel at.&lt;&#x2F;p&gt;
+&lt;p&gt;So what remains for startups? Domain complexity offered as services. The cost of offering an LLM-friendly service is less than maintaining a human-friendly UI. Real-world complexity isn&#x27;t solved by LLMs: e.g. somebody still needs to understand healthcare regulations and ensure compliance. And this new headless world introduces a couple challenges (identity and permissions).&lt;&#x2F;p&gt;
+&lt;p&gt;SaaS must pivot more into thinking about the &quot;as a service&quot; bit (think correctness and reliability), and this means re-thinking views on scaling&#x2F;hypergrowth&#x2F;VC. I always thought the industry overvalued, maybe now we can focus on real problems.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Dos semanas en Bogotá</title>
+        <published>2026-02-14T12:00:00+00:00</published>
+        <updated>2026-02-14T12:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/dos-semanas-en-bogota/"/>
+        <id>https://sllvn.me/notas/dos-semanas-en-bogota/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/dos-semanas-en-bogota/">&lt;p&gt;Hace poco, vi un documental de Anthony Bourdain sobre Colombia, donde elogió el país como uno de los mejores destinos para comer en el mundo. Me encanta mi ciudad, pero después de un año de parrillas y medialunas, estaba listo para probar cosas nuevas. Su episodio me inspiró y, con unos pocos cientos de dólares menos, tenía mi boleto.&lt;&#x2F;p&gt;
+&lt;p&gt;Después de dos semanas en la capital de Colombia, estoy de acuerdo: la comida es rica. Llegué por la noche pero por suerte había un restaurante coreano cerca de mi Airbnb y la comida era deliciosa, llena de especias que no existen en Argentina. El próximo día comí un ajiaco y algo cuyo nombre no puedo recordar. Había mucha comida tradicional y comida asiática, y todo fue fantástico. La escena de gastronomía de Bogotá es suficiente razón para visitar.&lt;&#x2F;p&gt;
+&lt;p&gt;La ciudad en sí estaba buena. No es una ciudad linda, pero tiene su propio encanto. Más allá de la gastronomía, está ubicada en las montañas: están siempre presentes. El clima es temperamental, cuando hay un poco de lluvia, la gente empieza a correr, porque en un solo minuto puede ser un aguacero. Me di cuenta rápido porque todos llevan su paraguas.&lt;&#x2F;p&gt;
+&lt;p&gt;La ciudad se está desarrollando rápidamente, pero podés ver que el desarrollo ha estado desigual: el norte, donde quedé, parece una ciudad de EEUU, muy de moda con marcas de lujo. Incluso hay marcas no permitidas en los EEUU, como la de autos: BYD. Pero el centro es más humilde, más real, con mercados llenos de gente vendiendo frutas, bolsitas, flores, cosas random. No visité el sur, porque he leído que puede ser un poco peligroso, y mucho menos la zona de tolerancia, donde la policía se hace la distraída de la prostitución y las drogas. Y en todos los lugares, hay gente sobreviviendo en las calle de cualquier manera que puedan encontrar.&lt;&#x2F;p&gt;
+&lt;p&gt;Es una ciudad complicada, en un país con una historia turbia. Pero con su estabilidad reciente, está creciendo rápido, y su ubicación es ideal para unir el sur con el norte. Si sus líderes pueden navegar las próximas décadas, no me sorprendería ver Bogotá como la ciudad más avanzada de Sudamérica.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bariloche</title>
+        <published>2026-01-11T11:00:00+00:00</published>
+        <updated>2026-01-11T11:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/bariloche/"/>
+        <id>https://sllvn.me/notas/bariloche/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/bariloche/">&lt;p&gt;El mes pasado, fui a Bariloche para celebrar mi cumpleaños. Era la primera vez que visitaba el sur de Argentina. Mucha gente me había dicho que me iba a encantar, así que mis expectativas estaban altas.&lt;&#x2F;p&gt;
+&lt;p&gt;Las vistas desde el Airbnb no me decepcionaron: el lago Nahuel Huapi es lindísimo y el Airbnb estaba ubicado en una colina, con una vista sin obstrucciones. Me quedé cerca del kilómetro 7, fuera del centro de Bariloche (que es un poco aburrido, re turístico), pero lo suficientemente cerca para ir a cenar y hacer compras. Los colectivos funcionan bien aunque eran bastante llenos; afortunadamente, los taxis (tipo Uber) abundaban y eran baratos. Me pareció raro poder pedir un taxi desde un sendero por 15.000 pesos (~10 USD).&lt;&#x2F;p&gt;
+&lt;p&gt;Los senderos son hermosos y durante mi semana hice tres: Frey, López, y Jakob. Cada uno terminó en un refugio, donde podés comprar bebidas y comida (tipo sándwich). En Jakob incluso había algunas camas para senderistas que estaban haciendo trekkings más grandes. Qué lujosos los refugios, por los ojos de este estadounidense. En mi experiencia en EEUU no hay nada parecido: no hay lugares para descansar o comprar algo en medio de la montaña. Solo caminé por las montañas tres veces porque el clima no fue mi amigo este viaje. Haciá frío, algo raro para diciembre, y la mayor parte del tiempo llovió o había vientos fuertes. Por eso, tuve la suerte de que las vistas del lago fueran tan impresionantes.&lt;&#x2F;p&gt;
+&lt;p&gt;Todo el tiempo que pasé en Bariloche, me me resultó familiar: las montañas, los lagos, el clima... todo me recordó a los lugares alrededor de Seattle. Mis amigos tenían razón. Es linda saber que no tengo que volar 15 horas para sentirme como en casa.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>El boliche de Roberto</title>
+        <published>2025-11-24T22:00:00+00:00</published>
+        <updated>2025-11-24T22:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/el-boliche-de-roberto/"/>
+        <id>https://sllvn.me/notas/el-boliche-de-roberto/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/el-boliche-de-roberto/">&lt;p&gt;Este finde fui con unas amigas a un bar notable llamado El Boliche de Roberto. Qué experiencia, era como pisar el pasado... si es que había espacio para pisar (estaba &lt;em&gt;re&lt;&#x2F;em&gt; ocupado, lleno de gente). Es un bar de tango, no de bailar, sino de cantar. Había una mezcla de cantantes acompañado por un guitarrista, todos hombres, pero uno de ellos fue el mejor por un gran margen. Un tipo borracho sentado cerca me dijo que el cantante era &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;enzolamastango&#x2F;&quot;&gt;Enzo&lt;&#x2F;a&gt;, con una admiración como si fuera famoso. El borracho no era la única “fangirl”, porque había muchas, desde chicas hasta abuelas, todas admirando su voz. Era impresionante.&lt;&#x2F;p&gt;
+&lt;p&gt;Después fuimos a una milonga cerca, un club de tango llamado “La Catedral”. Si te gusta bailar (u otras cosas más ocultas), está bien, pero ya era tarde y no recuerdo mucho. Al menos saqué fotos.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Las tres fronteras</title>
+        <published>2025-10-19T22:00:00+00:00</published>
+        <updated>2025-10-19T22:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/las-tres-fronteras/"/>
+        <id>https://sllvn.me/notas/las-tres-fronteras/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/las-tres-fronteras/">&lt;p&gt;Esta semana fui a Puerto Iguazú por unos días. La ciudad está ubicada en la frontera de tres países: Argentina, Brasil, y Paraguay.&lt;&#x2F;p&gt;
+&lt;p&gt;La atracción principal son las cataratas del Iguazú, las más grandes del mundo. Las cataratas están muy bien; son muy impresionantes y es difícil para aprender su escala. Pero a mí me interesan más los animales de la zona. Hay bastantes turistas visitando las cataratas, así que los animales del parque son los que se benefician de nuestra presencia (y de nuestra comida): los monos, los coatíes, y los pájaros.&lt;&#x2F;p&gt;
+&lt;p&gt;Fuera del parque hay una reserva ecológica llamada Güirá Oga: es como un zoológico pequeño, pero también funciona como hospital de animales. Fuimos con un grupo chico; empezamos con una vuelta en tractor y llegamos al centro del parque, donde una guía nos llevó por las exhibiciones. Había pájaros exóticos (como el tucán), mamíferos (como el tapir y el mono), y depredadores (como el puma). Fue una buena experiencia, pero está claro que necesita más dinero: a mí me parecieron pequeños los cercados.&lt;&#x2F;p&gt;
+&lt;p&gt;Los otros dos países están re cerca, separados solo por ríos. No pude visitar Brasil, como un estadounidense sin visa, pero había un colectivo que iba a Ciudad del Este (es interesante, pero merece su propia nota). La ciudad argentina, Puerto Iguazú, es pequeña y re turística, pero la gente es amigable. Su economía cayó este año con el peso argentino inflado. Me gustó, pero la próxima alquilaría un auto y exploraría más los lugares de los alrededores.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Programming is more than typing</title>
+        <published>2025-10-12T20:00:00+00:00</published>
+        <updated>2025-10-12T20:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/programming-more-than-typing/"/>
+        <id>https://sllvn.me/blog/programming-more-than-typing/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/programming-more-than-typing/">&lt;p&gt;Recently, the &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&quot;&gt;programming space&lt;&#x2F;a&gt; has been full of claims that LLMs remove the &quot;craft&quot; from &quot;software craftmanship&quot;, that we&#x27;ve offloaded the joy of programming, shifting developer autonomy into a tool that we &lt;em&gt;manage&lt;&#x2F;em&gt; (as if that&#x27;s a bad word). For some, this is an &lt;a href=&quot;https:&#x2F;&#x2F;hojberg.xyz&#x2F;the-programmer-identity-crisis&#x2F;&quot;&gt;identity crisis&lt;&#x2F;a&gt;. But programming is not about the physical act of writing code or the repeated application of the same patterns. It&#x27;s about understanding a problem and using technology to solve it. Code is just the interface.&lt;&#x2F;p&gt;
+&lt;p&gt;Earlier in my career, I used to view &quot;clean code&quot; as an intrinsic goal, but cleanliness and simplicity are not virtues in themselves. Their value is in understandability and maintainability. If LLMs change what is understandable and what is maintainable, we programmers need to reconsider our values. Our craft has changed and so should our priorities.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>El puente Soler</title>
+        <published>2025-09-28T08:00:00+00:00</published>
+        <updated>2025-09-28T08:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/el-puente-soler/"/>
+        <id>https://sllvn.me/notas/el-puente-soler/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/el-puente-soler/">&lt;p&gt;Hay un puente cerca mi casa que estaba cerrado para reparación por 2 años, lo conecta los barrios Colegiales y Palermo Hollywood (es una ruta importante). Cuando me mudé acá en enero, solo he conocido mi barrio con el puente cerrado. Pero en marzo completó la reparación y reabrió el puente, llegando el tráfico y el ruido. Realmente, prefiero que el puente queda cerado, porque durante su reparación la gente pudo usarlo, solo a pie.&lt;&#x2F;p&gt;
+&lt;p&gt;Pero poco despues su reapertura en marzo, quizas 2-3 meses, la ciudad anunció que el puente debería ser reemplazado. Argentina, nunca te entendería. Esto provocó una reacción de los vecinos del puente para salvarlo. Formaron una campaña con cartas y cintas, y presentaron una acción ambiental contra su destrucción.&lt;&#x2F;p&gt;
+&lt;p&gt;La semana pasada, &lt;a href=&quot;https:&#x2F;&#x2F;www.clarin.com&#x2F;ciudades&#x2F;puente-ferroviario-une-barrios-conserva-catalogacion-patrimonial-podra-reemplazado_0_eNxv0l6zBI.html&quot;&gt;el puente se salvó&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Creating a map of Argentina&#x27;s rivers</title>
+        <published>2025-07-20T16:00:00+00:00</published>
+        <updated>2025-07-20T16:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/argentina-rivers/"/>
+        <id>https://sllvn.me/blog/argentina-rivers/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/argentina-rivers/">&lt;img src=&quot;.&amp;#x2F;assets&amp;#x2F;argentina_rivers.png&quot; alt=&quot;Map of Argentina rivers&quot; class=&quot;dark-invert&quot; &#x2F;&gt;
+&lt;p&gt;For the past decade I&#x27;ve used &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mbostock&#x2F;us-rivers&quot;&gt;mbostock&#x27;s map of U.S. Rivers&lt;&#x2F;a&gt; as my desktop wallpaper. It was a perfect fit in an ideological and literal sense: water is an underappreciated (and &lt;a href=&quot;https:&#x2F;&#x2F;www.propublica.org&#x2F;series&#x2F;killing-the-colorado&quot;&gt;mismanaged&lt;&#x2F;a&gt;) resource, especially in the American Southwest, and the dimensions of the U.S. roughly matches 16:10 laptop displays.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve recently spent a lot of time in Argentina, so I wanted something similar for my adopted home. I used Perplexity Research to find data sources for rivers&#x2F;waterways of Argentina, and it led me to the &lt;a href=&quot;https:&#x2F;&#x2F;www.hydrosheds.org&#x2F;products&#x2F;hydrorivers&quot;&gt;HydroRIVERS South America dataset&lt;&#x2F;a&gt;. I then used Claude Code to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sllvn&#x2F;argentina-rivers&quot;&gt;vibe-code&lt;&#x2F;a&gt; a similar map of Argentina&#x27;s waterways. I don&#x27;t have much background with GIS or spatial data, but with some guidance (esp. with image skew&#x2F;dimensions), it created a script to generate a map for Argentina. It even generated intermediate analysis scripts which it used to debug problems as I pointed them out.&lt;&#x2F;p&gt;
+&lt;p&gt;The whole process took less than an hour and it&#x27;s great to get a sense of the major rivers: the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Paran%C3%A1_River&quot;&gt;Paraná&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;R%C3%ADo_Negro_(Argentina)&quot;&gt;Negro&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Bermejo_River&quot;&gt;Bermejo&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Pilcomayo_River&quot;&gt;Pilcomayo&lt;&#x2F;a&gt;, and &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Colorado_River_(Argentina)&quot;&gt;Colorado&lt;&#x2F;a&gt; are all plainly visible. (While the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Uruguay_River&quot;&gt;Uruguay&lt;&#x2F;a&gt; is second-largest, it forms the border with Uruguay and was filtered out.)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;sllvn.me&#x2F;blog&#x2F;argentina-rivers&#x2F;.&#x2F;assets&#x2F;argentina_rivers_large.png&quot;&gt;Full-size image (1600x2400)&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Jujuy&#x2F;Salta</title>
+        <published>2025-06-27T08:00:00+00:00</published>
+        <updated>2025-06-27T08:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/jujuy-salta/"/>
+        <id>https://sllvn.me/notas/jujuy-salta/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/jujuy-salta/">&lt;p&gt;Hace dos semanas, algunos amigos y yo fuimos a Jujuy y Salta. Volamos a San Salvador de Jujuy, pasamos una noche allá, y manejamos a un pueblo que se llama Iruya, donde pasamos tres dias.&lt;&#x2F;p&gt;
+&lt;p&gt;Iruya es un pueblo pequeño enclavado en las montañas. Hacía frio con mucho viento, pero me gustó. Mi amiga y yo caminamos dos dias en las montañas. La altura, 3.000m mas o menos, hizo todo más dificil, pero disfruté el reto. Los amigos de mi amiga, sin embargo, encontraron la altura demasiado difícil: una se enfermó y el otro tuvo que caminar re lento y parar frecuentemente. Pero persistó y eventualmente completó.&lt;&#x2F;p&gt;
+&lt;p&gt;Las vistas fueron impresionantes. Es un lugar de piedras rojas y formaciones geológicas muy interesantes. Es seco, como el desierto, y hay cactus y condores. Me parece que la vida en Jujuy es dura, con mucha pobreza, pero la gente parecía contenta, si no exactamente feliz. Hay gente que vive bastante aislada en las montañas, con sus cabras y burros, a quienes nos encontramos en los senderos.&lt;&#x2F;p&gt;
+&lt;p&gt;Despues de Iruya, pasamos un dia en Purmamarca. Paramos en Hornocal para la vista de las serranias de 14 colores. Era hermosa, pero los vientos fueron muy fuertes, casi 100 km&#x2F;h, y no pudimos disfrutarlo. Purmamarca es un pueblo lindo, si un poco turistico. Hay un mercado donde compramos algunas cosas de lana de llama. Compré una bufanda, muy útil en este invierno.&lt;&#x2F;p&gt;
+&lt;p&gt;Nuestro última día, fuimos a Salinas Grandes. Es un lugar llamativo, pero aburrido, sin profundidad, si eso tiene sentido. Es perfecto para Instagram, pero no mucho mas.&lt;&#x2F;p&gt;
+&lt;p&gt;Me gustó el área y quisiera visitarla de nuevo, pero con mejor español para poder hablar más con la gente. Quizás durante el próximo carnaval porque parece que el suyo es muy distintivo.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Shopify web components</title>
+        <published>2025-06-03T11:15:00+00:00</published>
+        <updated>2025-06-03T11:15:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/shopify-web-components/"/>
+        <id>https://sllvn.me/blog/shopify-web-components/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/shopify-web-components/">&lt;p&gt;As mentioned &lt;a href=&quot;&#x2F;blog&#x2F;composable-web-components&#x2F;&quot;&gt;previously&lt;&#x2F;a&gt;, composable web components are the future.&lt;&#x2F;p&gt;
+&lt;p&gt;Shopify recently announced their &lt;a href=&quot;https:&#x2F;&#x2F;shopify.dev&#x2F;docs&#x2F;api&#x2F;storefront-web-components&quot;&gt;Storefront web components&lt;&#x2F;a&gt;, allowing easy embedding of Shopify-hosted products into external pages. And because they&#x27;re web components, they&#x27;re framework agnostic and require zero changes to your build system. Import their JS, wrap your markup in &lt;code&gt;&amp;lt;shopify-store&amp;gt;&lt;&#x2F;code&gt; and &lt;code&gt;&amp;lt;shopify-content&amp;gt;&lt;&#x2F;code&gt; tags, then include the parts of content you want (&lt;code&gt;&amp;lt;shopify-media&amp;gt;&lt;&#x2F;code&gt; for images, &lt;code&gt;&amp;lt;shopify-data&amp;gt;&lt;&#x2F;code&gt; for title&#x2F;etc), styled how you want. Data loading is handled for you and non-trivial UX (e.g. a modal) is possible.&lt;&#x2F;p&gt;
+&lt;p&gt;And now that custom elements are &lt;a href=&quot;https:&#x2F;&#x2F;custom-elements-everywhere.com&#x2F;&quot;&gt;supported by every major framework (even React, finally!)&lt;&#x2F;a&gt;, interop is a breeze.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Elecciones en BA</title>
+        <published>2025-05-27T09:08:00+00:00</published>
+        <updated>2025-05-27T09:08:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/elecciones-en-ba/"/>
+        <id>https://sllvn.me/notas/elecciones-en-ba/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/elecciones-en-ba/">&lt;p&gt;Recíen fueron las elecciones por la ciudad de Buenos Aires. Los resultados sorprendieron muchos, porque la partida de la centra derecha (el PRO) perdió muchos de sus posiciones a la partida se llama LLA (mas de la derecha). No voy a escribir por los resultados, pero me parece emblemático de la situación global: la desaparición de la mitad y la aumentación de la posiciones mas extremas (gracias a las redes sociales).&lt;&#x2F;p&gt;
+&lt;p&gt;Las elecciones en Argentina son mandatorios. &quot;Mandatorios&quot; en la via que algo puede ser mandatorio si hay &lt;a href=&quot;https:&#x2F;&#x2F;www.argentina.gob.ar&#x2F;interior&#x2F;observatorioelectoral&#x2F;registro-de-infractores&quot;&gt;una multa de solo 100 pesos (~0.10 USD)&lt;&#x2F;a&gt;. Y no creo que la multa sea forzoso (nunca lo he oido).&lt;&#x2F;p&gt;
+&lt;p&gt;Pero la gente vota.&lt;&#x2F;p&gt;
+&lt;p&gt;Estas elecciones, las noticias escriben mucho que la participación había bajando a niveles mas bajo de muchos años: 55%. En los EEUU, me encantaría este nivel por elecciones en un año no de la presidencia. Normalmente la tasa de los EEUU es abajo 50%. Aún en los años de que votamos por la presidencia, la participación es bajo, &lt;a href=&quot;https:&#x2F;&#x2F;www.presidency.ucsb.edu&#x2F;statistics&#x2F;data&#x2F;voter-turnout-in-presidential-elections&quot;&gt;normalmente ~60%&lt;&#x2F;a&gt;. Comparala con &lt;a href=&quot;https:&#x2F;&#x2F;www.idea.int&#x2F;data-tools&#x2F;data&#x2F;country?country=11&amp;amp;database_theme=293&quot;&gt;la tasa en Argentina en 2015 (81%), 2019 (82%), y 2023 (79%)&lt;&#x2F;a&gt;. Un sueño.&lt;&#x2F;p&gt;
+&lt;p&gt;Pero obviamente es mal si la participación esta bajando. En los EEUU, cuando la tasa es bajo, las candidatos mas extremos han ganado con mas frecuencia y pensaría que la misma pauta sea verdad acá.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Los robots de Austin</title>
+        <published>2025-04-27T20:54:00+00:00</published>
+        <updated>2025-04-27T20:54:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/los-robots-de-austin/"/>
+        <id>https://sllvn.me/notas/los-robots-de-austin/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/los-robots-de-austin/">&lt;p&gt;Recién visité los EEUU por unas semanas. Tuve una reunion presencial de trabajo, pero llegué unos días temprano para visitar amigos. Para mi, Austin es raro y un poco dystopia pero siempre es bueno a visitar amigos.&lt;&#x2F;p&gt;
+&lt;p&gt;Mis amigos me llevaron a dos lagos, me parece que disfrutar los lagos es muy popular en Texas, porque hay mucha gente ambas veces. Y comimos helado casi todas las días. Es primavera pero todavía hace mucho calor. Creo que subió mi peso 2 kilos de helado solo.&lt;&#x2F;p&gt;
+&lt;p&gt;La reunion de trabajo fue bien, es bueno para ver mis colegas presencial. Dos de ellos escalan para disfrutar, y me invitaron dos veces. Me gustó mucho, y por un tiempo creí que me gustaría comprar zapatos de la escalada y la tiza, pero ya tengo demasiado actividades en BA… y mi codo no le gustó el escalada.&lt;&#x2F;p&gt;
+&lt;p&gt;Que fue raro de Austin este viaje fue los robots. Hay taxis autónomos que usé tres veces. Tengo sentimientos encontrados, pero estoy emocionado para su desarrollado porque ojalá mi papa puede parar manejar pronto. Y también hay robots para las entregas; ellos fueron mas “cute” que los taxis autónomos. Unos gente le gustó meterse con los robots: después una viaje en una Waymo, una persona saltó delante del taxi para pararlo.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Un año en Argentina</title>
+        <published>2025-03-25T23:42:00+00:00</published>
+        <updated>2025-03-25T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/un-ano-en-argentina/"/>
+        <id>https://sllvn.me/notas/un-ano-en-argentina/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/un-ano-en-argentina/">&lt;p&gt;Un año pasado, los 25 de marzo, entré en Argentina por la primera vez. Desde entonces, he pasado 221 días por sus fronteras. He aprendiendo mucho sobre el país en esto año y todavía me parece que conozco nada. “No lo entenderías” es verdad. Y en esto año, mucho ha cambiado, personalmente y en el mundo.&lt;&#x2F;p&gt;
+&lt;p&gt;Para mi, ha estado un buen año, con sus altibajos. Estoy mas sano y la vida acá es mejor. He estado un poco estresante, aprendiendo una nueva idioma, las nuevas costumbres, una nueva forma de relacionarse. He haciendo muchos errores pero estoy feliz estar acá.&lt;&#x2F;p&gt;
+&lt;p&gt;Para el mundo, no estoy tan seguro. Cosas están complicado. Mi país ha transformado y es difícil reconocerlo. Ella esta retirando de su lugar en el teatro global y hay un vacío que otro poderes lo van a tapar. La gente acá son mas acostumbrado a la incertidumbre y estoy aprendiendo esta perspectiva también.&lt;&#x2F;p&gt;
+&lt;p&gt;Hoy, escribí unos abogados de inmigraciones y espero empezar la procesa formal pronto. Me parecí apropiado, un año en.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>São Paulo</title>
+        <published>2025-03-21T08:17:00+00:00</published>
+        <updated>2025-03-21T08:17:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/sao-paulo/"/>
+        <id>https://sllvn.me/notas/sao-paulo/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/sao-paulo/">&lt;p&gt;Hoy es el ultimo día de verano. Antes mi mudanza, estaba un poco preocupado por el verano acá: el calor, el sol, la humedad. Y es verdad, son fuerte, pero soportable. La humedad, en particular, es difícil. Cuando es 28 con 90% humedad, es un montón, mucho mas difícil que 35 con 50% humedad, para mi. No puedo sentarme en el balcón, en la sombre, y disfrutar la vida.&lt;&#x2F;p&gt;
+&lt;p&gt;Tener la ropa apropiado es clave. La diferencia entre una remera algodón y una remera lino es grande. Cuando llegué, casi todo mi ropa fue algodón. Y porque comprar ropa en Argentina es difícil (bajo calidad, altos precios), recién visité San Pablo, Brasil para comprar cosas y tener un descanso de Buenos Aires.&lt;&#x2F;p&gt;
+&lt;p&gt;San Pablo es bueno. Al principio, fue demasiado y no me gustó, pero últimamente lo aprecié. Es un ciudad diferente. No es una ciudad encantadora, como Buenos Aires, es un ciudad muy caótica, grandísimo, y un poco inseguridad. Pero la gente es agradable, la arquitectura hermosa, y la comida muy bueno (esp. la ramen!). Escribí mi pensamientos y necesito escribir una nota acá, pero por ahora, esta es suficiente: es una ciudad complicada, pero voy a volver algún día.&lt;&#x2F;p&gt;
+&lt;p&gt;Volví a Buenos Aires con un poco mas agradecimiento por la ciudad. Acá, cosas han estado un poco estresado recién y no he tenido la energía para escribir, pero han estado mejorando. Tengo ganas para el otoño.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>De vuelta a Buenos Aires</title>
+        <published>2025-02-08T18:52:00+00:00</published>
+        <updated>2025-02-08T18:52:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/buenos-aires/"/>
+        <id>https://sllvn.me/notas/buenos-aires/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/buenos-aires/">&lt;p&gt;He estado un tiempo largo desde que mi ultimo blog.&lt;&#x2F;p&gt;
+&lt;p&gt;Llegue a Buenos Aires el comienzo de enero y solo he viviendo mi vida desde entonces. He trabajando, estudiando, conociendo nuevas personas, y volviendo a conectar con viejos amigos. Necesito escribir sobre mi experiencia algun dia, pero todavia no. Creo que necesito un poco distancia de eventos recientes en EEUU antes puedo tener una cabeza clara. (Tambien, hay una palabra que me encanta: &quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.spanishdict.com&#x2F;translate&#x2F;despejarse&quot;&gt;despejarse&lt;&#x2F;a&gt;&quot;. Una palabra por algo importante que son tres palabras en ingles.)&lt;&#x2F;p&gt;
+&lt;p&gt;Hoy es un buen dia afuera, el sol aparezco, tuve planes para cenar… pero estoy enferma, atrapado en el interior, veyendo videos de travel por youtube. (Asi que ahora me gustaría visitar Sao Paulo. Algun dia.)&lt;&#x2F;p&gt;
+&lt;p&gt;He tomando mucho te con miel. Fui a la farmacia antes a comprar DayQuil (o la equivalencia), pero necesito una receta para todo. Es extraño, la farmacia no tiene nada para mi dolor de garganta, necesito ir al medico y recibir una receta. En EEUU fui al medico solo por cosas serias, pero aca porque es gratis (o barato), es normal. Cuando digo mis amigos que no he estado al medico en 5 años porque el sistema no funciona, todos son asombrado y decepcionado.&lt;&#x2F;p&gt;
+&lt;p&gt;A pesar de no he escribiendo en este blog, mi español ha estado mejorando. Pero tal vez mejore mas rápidamente si recuerdo escribir mas.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>La mudanza</title>
+        <published>2024-12-09T12:46:00+00:00</published>
+        <updated>2024-12-09T12:46:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/la-mudanza/"/>
+        <id>https://sllvn.me/notas/la-mudanza/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/la-mudanza/">&lt;p&gt;He estado ocupado con la eliminación de mis cosas. Estoy intentando a reducir mi vida así que puede quedar bien en mi auto. Los mas importante va a viajar a Argentina en tres maletas, mientras el resto queda en la casa de mi padres. Lo mas difícil es mis libros, a este tiempo, están en cajas listos para la donación, pero tengo dudas: tal vez voy a cambiar mi mente y querer unos.&lt;&#x2F;p&gt;
+&lt;p&gt;La semana pasada fue muy gris. La mañanas ha estado muy neblinoso y la tardes nubloso. Para colmo, hay solo ocho horas de la luz, de 8 a 16, pero es muy hermosa para las fotos, asi que he intentado tomar muchas.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Invierno gris</title>
+        <published>2024-11-30T13:35:00+00:00</published>
+        <updated>2024-11-30T13:35:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/invierno-gris/"/>
+        <id>https://sllvn.me/notas/invierno-gris/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/invierno-gris/">&lt;p&gt;El Noroeste del Pacífico es innegablemente hermoso. Cuando el sol aparece por las nubes, particularmente durante el atardecer, los colores del cielo son increíble: los azules y morados estan en crudo contraste contra las gris. Y con la agua, es perfección.&lt;&#x2F;p&gt;
+&lt;p&gt;Pero la gris es, a veces, acuciante. Cada año, he aprendiendo que necesito escapar las profundidades de invierno así que siempre viajo a California, Nevada, o Texas. Después dos meses sin sol, o con poco sol, mi cabeza es en un mal lugar.&lt;&#x2F;p&gt;
+&lt;p&gt;Este año es diferente, es mas difícil y mas rapid. Mis amigas&#x2F;amigos estan posteando fotos de la primavera y el sol de Argentina – las jacarindas florecientes, las soleadas playas – y estoy rodeado con gris. Para colmo, porque me futuro no es acá, en el gris, estoy desconectado. Es peor de lo normal y no me cae bien.&lt;&#x2F;p&gt;
+&lt;p&gt;Pero bueno, ayer fui a la reserva natural cerca y tomé fotos de los pájaros.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Portland</title>
+        <published>2024-11-23T01:45:00+00:00</published>
+        <updated>2024-11-23T01:45:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/portland/"/>
+        <id>https://sllvn.me/notas/portland/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/portland/">&lt;p&gt;Ayer fui a Portland para comprar un celular nuevo. Cuando visité Argentina, específicamente Mendoza y Aconcagua, tomé muchas fotos pero la cualidad no estaba bueno con mi celular viejo, particularmente con zoom. Tengo una camera verdad, pero nunca lo traego en mis viajes, porque el peso es importante. Asi que compré el nuevo iPhone con un genial zoom. Hasta ahora, estoy feliz con la camera. Es un poco &quot;grainy&quot; a veces con el zoom digital, pero con el zoom óptico es muy bien.&lt;&#x2F;p&gt;
+&lt;p&gt;Tambien en la tienda de Apple intenté su Vision Pro auriculares. Es bueno, pero todavía estan posicionando como un aparato de entretenimiento, y me lo interesa como un aparato de productividad. Hay un caracteristica nueva como un monitor de ancho, pero no pude intentarlo durante el demo. Generalmente fue un demo impresionante, pero por supuesto no voy a pagar 3500 USD para lo.&lt;&#x2F;p&gt;
+&lt;p&gt;Finalmente, en Portland hay muchos restaurantes genial; es una pequeña ciudad con un increible escena de comida. Cuando fue en Argentina extrañé ramen (la gente va a decir que hay buen ramen allí, pero no es verdad), así que comí el mejor ramen en meses.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Seattle</title>
+        <published>2024-11-21T02:54:00+00:00</published>
+        <updated>2024-11-21T02:54:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/seattle/"/>
+        <id>https://sllvn.me/notas/seattle/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/seattle/">&lt;p&gt;Ayer regresé a Seattle y me di cuento de nuevo que lo es un ciudad muy hermosa. La agua, las montañas, la naturaleza… Creo que la mas hermosa lugar en EEUU. Va a estar difícil dejar, pero voy a decir mis despedidas con unos viajes de fotografía. Tomé unos fotos por el avion durante nuestro aproximación.&lt;&#x2F;p&gt;
+&lt;p&gt;En otras noticias, en Argentina, perdí 11 kilos, mas o menos. Es linda, ahora puedo usar mucha ropa que tuve en cajas. Pero ahora que estoy en EEUU, el truco continúa ser saludable. En Austin, ya subí 1 kilo en solo 5 días! La comida (Mexicana, Texmex, BBQ) es tan rico, pero bastante poco saludable.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Texas Renfair</title>
+        <published>2024-11-18T02:12:00+00:00</published>
+        <updated>2024-11-18T02:12:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/texas-renfair/"/>
+        <id>https://sllvn.me/notas/texas-renfair/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/texas-renfair/">&lt;p&gt;Mi dia fue muy ocupado y ahora estoy cansado.&lt;&#x2F;p&gt;
+&lt;p&gt;Hoy me levanté temprano, 6.30, y salí a correr. Corrí por el barrio de mis amigos y encontré un aréa naturaleza.&lt;&#x2F;p&gt;
+&lt;p&gt;Mas tarde, mis amigos y yo fue al feria de Renaissance (Renfair) cerca Houston. El feria fue muy lejo, asi que paremos a un gasolinera se llama &quot;Buc-ee&#x27;s&quot;. Que enorme: fue 100 surtidores y su tiendo fue como un hipermercado. Renfair fue bien, pero había mucha lluvia y fue muy embarrado.&lt;&#x2F;p&gt;
+&lt;p&gt;Finalmente, fuimos al Waffle House para cenar. Ahora mis amigos estan jugando un videojuego mientras escribo este.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Museo Blanton (Austin)</title>
+        <published>2024-11-16T21:28:00+00:00</published>
+        <updated>2024-11-16T21:28:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/museo-blanton-austin/"/>
+        <id>https://sllvn.me/notas/museo-blanton-austin/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/museo-blanton-austin/">&lt;p&gt;Hoy fue sabado así que mis amigos no tuvieron trabajar. Hicimos muchas cosas: fue al mercado del arte para comprar algo por la cumpleaños de su amiga, comemos barbecue de texas, fuimos a la arcade (la sala de juegos recreativos?) por el bien de los viejos tiempos, y finalmente fuimos al &lt;a href=&quot;https:&#x2F;&#x2F;blantonmuseum.org&#x2F;&quot;&gt;Museo de arte Blanton&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Quise encontrar &lt;a href=&quot;https:&#x2F;&#x2F;es.wikipedia.org&#x2F;wiki&#x2F;Luperca&quot;&gt;la escultura de capitoline&lt;&#x2F;a&gt; (el lobo del mito de la fundacíon de roma). En argentina, tomé fotos de 3 esculturas de capituline (2 en buenos aires, 1 en mendoza) y estaba emocionado tomar uno mas en austin. Desafortunadamente, la escultura fue en el depósito asi que no pudimos verlo. Pero el museo fue bien: había muchas artistas argentinas modernas, y me gusté unos.&lt;&#x2F;p&gt;
+&lt;p&gt;Mas tarde vamos a la fiesta por la amiga de mis amigos. Ya conozco unas las personas, asi que debería ser divertido.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Llegando a Austin</title>
+        <published>2024-11-15T14:31:00+00:00</published>
+        <updated>2024-11-15T14:31:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/llegando-a-austin/"/>
+        <id>https://sllvn.me/notas/llegando-a-austin/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/llegando-a-austin/">&lt;p&gt;Llegué ayer en la mañana a los EEUU. Mi vuelo fue bueno - sin incidente y a tiempo. Me estoy quedando con mis amigos (Brandon y Melissa) en Austin. Texas es un ajuste: es muy lejo de Buenos Aires, ambos en distancia y en cultura.&lt;&#x2F;p&gt;
+&lt;p&gt;Durante la tarde, Melissa y yo fuimos al supermercado se llama H.E.B. Es gigantesco: me parece que un completo supermercado Dia podría caber en un pasillo de H.E.B. Hay un montón de selecciones, pero cosas acá son muy caro. Quise comprar unos buen queso hasta yo vi que cuestó $18 por un cantidad pequeño. Una bolsa de mate cuestó $16, y había solo una marca.&lt;&#x2F;p&gt;
+&lt;p&gt;Anoche mis amigos y yo salimos a un paseo de arte en el centro de Austin. Fue divertido; mis amigos les gusta tomar muchas fotos. Y sorprendentemente, Austin puede estar bastante frio en la noche: temblé hasta encontramos una tienda y compré unos chocolate caliente.&lt;&#x2F;p&gt;
+&lt;p&gt;Este mañana me levanté temprano, a las 6 (mas o menos) porque Austin es 3 horas mas tardé de Buenos Aires. Usualmente mis amigos levanté tarde (cerca 9) así que decidí salir a un cafe. El mas cerca es Starbucks y fue una caminata de 20 mins. Nadie camina acá - todos conduce a todas partes. Si camines, es porque sos pobre. Y los autos son muy grande, estaría una broma si los autos no estarían tan peligroso.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Viaje demorado</title>
+        <published>2024-08-18T17:21:00+00:00</published>
+        <updated>2024-08-18T17:21:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/notas/viaje-demorado/"/>
+        <id>https://sllvn.me/notas/viaje-demorado/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/notas/viaje-demorado/">&lt;p&gt;Mi viaje fue un quilombo.&lt;&#x2F;p&gt;
+&lt;p&gt;Mi avion fue 12 horas tarde, por un problema mecanical. Inicialmente se ofrecen un pase de 15 dolares para comer, ridiculo. Entonces sus llamo y finalmente me dan un hotel… pero no pude tener mis maletas, solo me dan un cepillo los dentes.&lt;&#x2F;p&gt;
+&lt;p&gt;Llegue el hotel (lleno de argentinos), puse mis maletas en la habitación, y salí por comer. Cuando volví, habiá una fuga. Agua de la techo.&lt;&#x2F;p&gt;
+&lt;p&gt;Me muden, pero ahora pienso que mis viaje es maldita.&lt;&#x2F;p&gt;
+&lt;p&gt;Al menos, mi taxi del aeropuerto no fue un estafa!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Composable web components</title>
+        <published>2023-11-26T13:22:00+00:00</published>
+        <updated>2023-11-26T13:22:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/composable-web-components/"/>
+        <id>https://sllvn.me/blog/composable-web-components/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/composable-web-components/">&lt;p&gt;I&#x27;ve been enjoying the resurgent buzz around web components (specifically custom elements). The idea &lt;em&gt;du jour&lt;&#x2F;em&gt; seems to be &quot;HTML Web Components&quot;, ie, treating components as another form of progressive enhancement: wrap normal HTML content with a custom element, so that the normal content gets enhanced with the web component&#x27;s behavior. E.g. something like the following to render a custom audio player:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html z-code&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;my-player&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;  &lt;span class=&quot;z-meta z-tag z-inline z-any z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-any z-html&quot;&gt;audio&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;src&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;podcast.mp3&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;my-player&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But what about wrapping non-standard HTML elements? If the idea is progressive enhancement, why not also enhance web components? &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zachleat&quot;&gt;Zach&lt;&#x2F;a&gt; at 11ty &lt;a href=&quot;https:&#x2F;&#x2F;is-land.11ty.dev&#x2F;&quot;&gt;created an &lt;code&gt;&amp;lt;is-land&amp;gt;&lt;&#x2F;code&gt; component&lt;&#x2F;a&gt; with this idea in mind (it handles boring-but-necessary stuff like loading and rendering). A straightforward example is providing controls for the behavior of child components.&lt;&#x2F;p&gt;
+&lt;script type=&#x27;text&#x2F;javascript&#x27; src=&#x27;.&#x2F;script.js&#x27;&gt;&lt;&#x2F;script&gt;
+&lt;style&gt;
+  svg {
+    border: 1px solid var(--primary);
+    max-width: 500px;
+    max-height: 500px;
+  }
+&lt;&#x2F;style&gt;
+&lt;p&gt;Here we have an ordinary Game of Life component (written largely by Copilot). It accepts a couple attributes to control its behavior.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html z-code&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-of-life&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;size&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;25&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;speed&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;100&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;game-of-life size=&#x27;25&#x27; speed=&#x27;100&#x27; &#x2F;&gt;
+&lt;p&gt;Now let&#x27;s create that wrapper component and let &lt;em&gt;it&lt;&#x2F;em&gt; set those rules:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html z-code&quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-config&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;  &lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;input&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;name&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;speed&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;type&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;range&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;min&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;50&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;max&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;1000&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;value&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;100&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;  &lt;span class=&quot;z-meta z-tag z-inline z-form z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-entity z-name z-tag z-inline z-form z-html&quot;&gt;input&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;name&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;size&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;type&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;range&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;min&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;10&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;max&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;100&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;value&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-html&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;50&lt;span class=&quot;z-punctuation z-definition z-string z-end z-html&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;  &lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-of-life&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-attribute-with-value z-html&quot;&gt;&lt;span class=&quot;z-entity z-other z-attribute-name z-html&quot;&gt;data-configurable&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&#x2F;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-basic&quot;&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-begin z-html&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-custom z-html&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-custom z-html&quot;&gt;game-config&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-tag z-end z-html&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;game-config&gt;
+  &lt;input name=&#x27;speed&#x27; type=&#x27;range&#x27; min=&#x27;50&#x27; max=&#x27;1000&#x27; value=&#x27;100&#x27; &#x2F;&gt;
+  &lt;input name=&#x27;size&#x27; type=&#x27;range&#x27; min=&#x27;10&#x27; max=&#x27;100&#x27; value=&#x27;50&#x27; &#x2F;&gt;
+  &lt;game-of-life data-configurable &#x2F;&gt;
+&lt;&#x2F;game-config&gt;
+&lt;p&gt;By making &lt;code&gt;game-of-life&lt;&#x2F;code&gt; responsive to changes passed down by &lt;code&gt;game-config&lt;&#x2F;code&gt; (&lt;em&gt;a la&lt;&#x2F;em&gt; &lt;a href=&quot;https:&#x2F;&#x2F;react.dev&#x2F;learn&#x2F;passing-data-deeply-with-context&quot;&gt;React context&lt;&#x2F;a&gt;), it&#x27;s much more re-usable. Consumers can use sliders, numeric inputs, and other custom elements to set speed+size and &lt;code&gt;game-of-life&lt;&#x2F;code&gt; reacts appropriately.&lt;&#x2F;p&gt;
+&lt;p&gt;Component full source can be found at &lt;a href=&#x27;.&#x2F;script.js&#x27;&gt;script.js&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Simple ETL with bash, jq, and SQLite</title>
+        <published>2020-01-29T13:22:00+00:00</published>
+        <updated>2020-01-29T13:22:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/simple-etl-with-bash-jq-sqlite/"/>
+        <id>https://sllvn.me/blog/simple-etl-with-bash-jq-sqlite/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/simple-etl-with-bash-jq-sqlite/">&lt;p&gt;I run a couple simple ETL pipelines for side projects, and after experimenting with Lambda to kick off Python jobs (and finding it frustrating), I&#x27;ve settled on simple bash scripts (along with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;stedolan&#x2F;jq&quot;&gt;the awesome &lt;code&gt;jq&lt;&#x2F;code&gt; util&lt;&#x2F;a&gt;) run via cron on a DigitalOcean instance. Not only is it more stable, but I&#x27;ve found it to be much faster. Recently, &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=22153390&quot;&gt;a thread on HN&lt;&#x2F;a&gt; convinced me to try adding SQLite to the mix, and I&#x27;ve been happy with the results.&lt;&#x2F;p&gt;
+&lt;p&gt;For my Twitter timeline scrape, I run &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;sllvn&#x2F;1a734d1f0c195995a9166ad309664e3f&quot;&gt;a script&lt;&#x2F;a&gt; every five minutes that scrapes the last 200 timeline tweets (via &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twitter&#x2F;twurl&quot;&gt;&lt;code&gt;twurl&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;), converts the JSON into a CSV, and imports that CSV into a SQLite db. A unique key on the &lt;code&gt;id&lt;&#x2F;code&gt; col prevents duplicates, and so far the setup has proven solid.&lt;&#x2F;p&gt;
+&lt;p&gt;The trick is using &lt;code&gt;jq&lt;&#x2F;code&gt;&#x27;s &lt;code&gt;@csv&lt;&#x2F;code&gt; filter (along with the &lt;code&gt;-r&lt;&#x2F;code&gt; flag to not escape output as JSON) to output the tweets to CSV:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-echo z-shell&quot;&gt;echo&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;id,created_at,user_id,screen_name,is_retweet,text&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-assignment z-redirection z-shell&quot;&gt;&amp;gt;&lt;&#x2F;span&gt; tweets.csv&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;jq&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;r&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;.[] | [.id, .created_at, .user.id, .user.screen_name, .retweeted_status != null, .text] | @csv&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; data&#x2F;tweets.json &lt;span class=&quot;z-keyword z-operator z-assignment z-redirection z-shell&quot;&gt;&amp;gt;&amp;gt;&lt;&#x2F;span&gt; tweets.csv&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then all that remains is to import the CSV into your SQLite db:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;sqlite3&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; tweets.sqlite&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;cmd&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;.mode csv&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;.import tweets.csv tweets&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can pass a single command to &lt;code&gt;sqlite3&lt;&#x2F;code&gt;&#x27;s CLI, but when you need to chain multiple commands (as importing from CSV requires &lt;code&gt;.mode csv&lt;&#x2F;code&gt;), use the &lt;code&gt;-cmd&lt;&#x2F;code&gt; flag for each of the first N-1 commands (listed commands will be executed in order).&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=22153390&quot;&gt;HN thread&lt;&#x2F;a&gt; gives some tips (recommended SQLite pragmas, etc.) on how to use this with larger pipelines, and I look forward to using this with my transit scraper (1000s of vehicle locations updating every minute).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Facebook&#x27;s responsibility in an election crisis</title>
+        <published>2018-11-29T22:21:00+00:00</published>
+        <updated>2018-11-29T22:21:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/facebooks-responsibility/"/>
+        <id>https://sllvn.me/blog/facebooks-responsibility/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/facebooks-responsibility/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.pbs.org&#x2F;wgbh&#x2F;frontline&#x2F;interview&#x2F;alex-stamos&#x2F;&quot;&gt;PBS Frontline interviewed Alex Stamos&lt;&#x2F;a&gt;, ex-Facebook chief security officer, on the company&#x27;s response in wake of 2016 election. Some interesting quotes:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[One] of my big fears is that we’re going to see other U.S. adversaries—Iran, North Korea, China—jump into the information warfare space in 2018, and especially in 2020.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Prescient statement, as this interview was conducted in September, a month before &lt;a href=&quot;https:&#x2F;&#x2F;thehill.com&#x2F;policy&#x2F;national-security&#x2F;412292-us-warns-of-ongoing-election-interference-by-russia-china-iran&quot;&gt;the intelligence community warned of Russian, Iranian, and Chinese interference leading up to the midterms.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Do you think Facebook has earned the trust to be able to say, “Trust us; we’ve got this”?&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’m not going to answer that. I’m sorry—that’s just—everybody can make that decision for themselves.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;To me, that reads &quot;no&quot;.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the GRU pulled the same playbook in 2018, if right now WikiLeaks came out with the email inboxes of the five most vulnerable Democratic Senate candidates, nothing would be different in 2018 than it was in 2016, and I think we’ve got to start to think about when that happens, because that is very much a possibility if not in the midterms, in the presidential election.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Stamos makes the point that government regulation is the answer, but as &lt;a href=&quot;https:&#x2F;&#x2F;mashable.com&#x2F;2018&#x2F;04&#x2F;10&#x2F;mr-zuckerberg-meme-senate-hearing-facebook&#x2F;&quot;&gt;Zuckerberg had to explain the internet to our aged Senators&lt;&#x2F;a&gt;, I wouldn&#x27;t wait on government to take the lead. Tech companies understand their own platforms better than anyone else; as such, they are the most capable of understanding the consequences of under-moderation. If you build a platform, the burden of moderation falls upon &lt;em&gt;you&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Defining page titles in react-router route config</title>
+        <published>2016-08-29T13:31:49+00:00</published>
+        <updated>2016-08-29T13:31:49+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/defining-page-titles-react-router/"/>
+        <id>https://sllvn.me/blog/defining-page-titles-react-router/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/defining-page-titles-react-router/">&lt;p&gt;I’ve been using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nfl&#x2F;react-helmet&quot;&gt;react-helmet&lt;&#x2F;a&gt; to set page titles in &lt;a href=&quot;http:&#x2F;&#x2F;nomos.us&quot;&gt;Nomos&lt;&#x2F;a&gt;, but it’s felt weird to me to litter my JSX templates with &lt;Helmet&gt; tags. Thinking it would be cleaner (and would allow me to re-use titles, e.g. for breadcrumbs) if I pulled the page titles into the route config, &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;0bb5f5e88718944f514b99c064be64b1&quot;&gt;I created a higher-order component that I now just wrap my container components in&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I use this by defining a &lt;code&gt;title&lt;&#x2F;code&gt; on my route’s config, which can be either a string or a function (which receives the component’s props as an argument). Something like:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-relational z-ts&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;Route&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;  &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;path&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&#x2F;documents&#x2F;:documentId&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;  &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;component&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;DocumentContainer&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;  &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;title&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-objectliteral z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-object z-member z-ts&quot;&gt;&lt;span class=&quot;z-meta z-arrow z-ts&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-ts&quot;&gt;props&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-arrow z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-function z-arrow z-ts&quot;&gt;=&amp;gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-object z-ts&quot;&gt;props&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-ts&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-property z-ts&quot;&gt;documentName&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ts&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-relational z-ts&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Combining iOS SMS message histories from multiple devices</title>
+        <published>2016-03-25T12:26:12+00:00</published>
+        <updated>2016-03-25T12:26:12+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/combining-ios-sms-histories/"/>
+        <id>https://sllvn.me/blog/combining-ios-sms-histories/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/combining-ios-sms-histories/">&lt;p&gt;A couple months back, I gave up on my iPhone 6 (too unwieldy) and began using my old iPhone 5s. Regrettably, I didn’t restore the 5s from a backup, so its SMS history began as a clean slate. Two months later, in preparation for the timely iPhone SE release, I find myself wanting to merge the two SMS histories. Unfortunately, no such way existed, officially or otherwise... until now.&lt;&#x2F;p&gt;
+&lt;p&gt;With some Ruby&#x2F;SQLite hackery, I managed to create &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;licyeus&#x2F;ios-sms-merge&quot;&gt;ios-sms-merge&lt;&#x2F;a&gt; - you’ll need to download the kludgy iBackupBot to import&#x2F;export from your iOS backups, but with persistence and this script, you can now combine your SMS histories.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Using Slack at home</title>
+        <published>2015-12-13T16:11:26+00:00</published>
+        <updated>2015-12-13T16:11:26+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/using-slack-at-home/"/>
+        <id>https://sllvn.me/blog/using-slack-at-home/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/using-slack-at-home/">&lt;p&gt;After reading about Facebook Messenger’s &lt;a href=&quot;http:&#x2F;&#x2F;www.businessinsider.com&#x2F;facebook-messenger-testing-facial-recognition-technology-2015-11&quot;&gt;complete disregard for user privacy&lt;&#x2F;a&gt;, I moved communication with the girlfriend over to Slack. We are apparently &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@msquinn&#x2F;slack-after-hours-306d37e67722&quot;&gt;not the first to do so&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;We’ve been happy with the experience. Search, totally absent from FB Messenger, is great. Multi-channeled communication is quite useful for home communication (we separate messages by topic: #home, #groceries, or just #general chat). Additionally, we’ve spun up a &lt;a href=&quot;https:&#x2F;&#x2F;hubot.github.com&#x2F;&quot;&gt;chatbot&lt;&#x2F;a&gt; to manage shared lists (e.g., groceries) and tell us when our morning bus is arriving.&lt;&#x2F;p&gt;
+&lt;p&gt;It would be great to have more contextual awareness in the Slack app, however. Location, especially, would be nice to have for more relevant chatbot responses. “Where’s my bus?” is a lot more natural than “Where’s the 28 southbound on 34th street?”&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve shared my hubot scripts at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;licyeus&#x2F;home-hubot&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;licyeus&#x2F;home-hubot&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Add logic to your Rails asset pipeline manifests</title>
+        <published>2013-09-22T20:19:00+00:00</published>
+        <updated>2013-09-22T20:19:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/logic-in-rails-asset-pipeline/"/>
+        <id>https://sllvn.me/blog/logic-in-rails-asset-pipeline/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/logic-in-rails-asset-pipeline/">&lt;p&gt;Recently, while reading &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;discourse&#x2F;discourse&quot;&gt;Discourse’s source code&lt;&#x2F;a&gt;, I learned that Rails asset pipeline Javascript&#x2F;CSS manifests are just plain old JS&#x2F;CSS files and can be passed through a templating engine. This means you can add the .erb extension to add logic. This is useful if you want to use a prod-only CDN, serve dev-only Javascript debug code, or in Discourse’s case, dynamically load plugin assets.&lt;&#x2F;p&gt;
+&lt;p&gt;When including assets from Ruby code in your manifest, use Sprocket’s &lt;code&gt;require_asset&lt;&#x2F;code&gt; method (&lt;a href=&quot;https:&#x2F;&#x2F;www.rubydoc.info&#x2F;github&#x2F;sstephenson&#x2F;sprockets&#x2F;Sprockets&#x2F;Context:require_asset&quot;&gt;rubydoc&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;discourse&#x2F;discourse&#x2F;blob&#x2F;ef82b66e95324805e3d3d982d2052c52eee4eca7&#x2F;app&#x2F;assets&#x2F;javascripts&#x2F;application.js.erb&quot;&gt;Discourse’s application.js.erb&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;ruby&quot; class=&quot;language-ruby z-code&quot;&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-meta z-string z-regexp z-ruby&quot;&gt;&lt;span class=&quot;z-string z-regexp z-classic z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ruby&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-require z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-other z-special-method z-ruby&quot;&gt;require&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;env&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-meta z-string z-regexp z-ruby&quot;&gt;&lt;span class=&quot;z-string z-regexp z-classic z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ruby&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-require z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-other z-special-method z-ruby&quot;&gt;require&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;discourse&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;components&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;&#x2F;&lt;&#x2F;span&gt;probes&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;js&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-comparison z-ruby&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-arithmetic z-ruby&quot;&gt;%&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ruby&quot;&gt;#&lt;&#x2F;span&gt; ...
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;if&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-class z-ruby&quot;&gt;Rails&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;env&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;development?
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;  require_asset &lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;.&#x2F;external_development&#x2F;ember.js&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;else&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;  require_asset &lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;.&#x2F;external_production&#x2F;ember.js&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;end&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;require_asset &lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;.&#x2F;main_include.js&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ruby&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-ruby&quot;&gt;#&lt;&#x2F;span&gt; Include plugin javascripts
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-support z-class z-ruby&quot;&gt;DiscoursePluginRegistry&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;javascripts&lt;span class=&quot;z-punctuation z-accessor z-dot z-ruby&quot;&gt;.&lt;&#x2F;span&gt;each &lt;span class=&quot;z-keyword z-control z-start-block z-ruby&quot;&gt;do&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-block z-parameters z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameters z-begin z-ruby&quot;&gt;|&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-block z-parameters z-ruby&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-ruby&quot;&gt;js&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-block z-parameters z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameters z-end z-ruby&quot;&gt;|&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;  require_asset&lt;span class=&quot;z-punctuation z-definition z-group z-begin z-ruby&quot;&gt;(&lt;&#x2F;span&gt;js&lt;span class=&quot;z-punctuation z-definition z-group z-end z-ruby&quot;&gt;)&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-keyword z-control z-ruby&quot;&gt;end&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ruby&quot;&gt;&lt;span class=&quot;z-meta z-string z-ruby&quot;&gt;&lt;span class=&quot;z-string z-quoted z-other z-literal z-other z-ruby&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ruby&quot;&gt;%&amp;gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Angular controller dependency injection with Coffeescript</title>
+        <published>2013-08-06T11:30:00+00:00</published>
+        <updated>2013-08-06T11:30:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Andrew Sullivan
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sllvn.me/blog/angular-di-with-coffeescript/"/>
+        <id>https://sllvn.me/blog/angular-di-with-coffeescript/</id>
+        
+        <content type="html" xml:base="https://sllvn.me/blog/angular-di-with-coffeescript/">&lt;p&gt;After reading that Angular’s new “controller as” syntax available in 1.1.5 works quite nicely with Coffeescript, I was inspired to port some existing Javascript&#x2F;Angular code to Coffeescript. What was not immediately apparent, however, was how to inject dependencies when using a Coffeescript class as the meat of an Angular controller.&lt;&#x2F;p&gt;
+&lt;p&gt;I finally settled upon something like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-object z-ts&quot;&gt;myApp&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-accessor z-ts&quot;&gt;.&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-property z-ts&quot;&gt;controller&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;YoloController&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-array z-literal z-ts&quot;&gt; &lt;span class=&quot;z-meta z-brace z-square z-ts&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-single z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;$resource&lt;span class=&quot;z-punctuation z-definition z-string z-end z-ts&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-array z-literal z-ts&quot;&gt;  &lt;span class=&quot;z-meta z-class z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-class z-ts&quot;&gt;class&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;YoloController&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-array z-literal z-ts&quot;&gt;&lt;span class=&quot;z-meta z-class z-ts&quot;&gt;    &lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;constructor&lt;&#x2F;span&gt;: (&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;$resource&lt;&#x2F;span&gt;) -&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-array z-literal z-ts&quot;&gt;&lt;span class=&quot;z-meta z-class z-ts&quot;&gt;      @&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;Hipster&lt;&#x2F;span&gt; = &lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;$resource&lt;&#x2F;span&gt;(&amp;#39;&#x2F;&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;hipsters&lt;&#x2F;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-array z-literal z-ts&quot;&gt;&lt;span class=&quot;z-meta z-class z-ts&quot;&gt;      @&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;hipsters&lt;&#x2F;span&gt; = @&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;Hipsters&lt;&#x2F;span&gt;.&lt;span class=&quot;z-entity z-name z-type z-class z-ts&quot;&gt;query&lt;&#x2F;span&gt;()
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-array z-literal z-ts&quot;&gt;&lt;span class=&quot;z-meta z-class z-ts&quot;&gt;]
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Obviously, you would want to move this resource into a service. And if you needed to use the injection in other class methods, you would want to assign it to a class variable, using Coffeescript’s convenient constructor assignment syntax (note the @ sign): &lt;code&gt;constructor: (@$resource) -&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
