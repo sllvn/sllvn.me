@@ -4,6 +4,7 @@
   --background: #f2e8da;
   --code-background: #e4dbcd;
   --quote-background: #e4dbcd;
+  --quote-border: #b8afa3;
   --muted: #4a4641;
 }
 body {
@@ -43,7 +44,7 @@ h2 {
 blockquote {
   margin: 0;
   padding: 1rem;
-  background-color: --var(quote-background);
+  border-left: 0.25rem solid var(--quote-border);
 }
   blockquote p:first-child { margin-top: 0; }
   blockquote p:last-child { margin-bottom: 0; }
@@ -183,6 +184,7 @@ article > hr + .footnotes-list {
     --primary: #d3cabf;
     --background: #302e2c;
     --quote-background: #373533;
+    --quote-border: #5a554f;
     --code-background: #2a2826;
     --muted: #b8b0a7;
   }
